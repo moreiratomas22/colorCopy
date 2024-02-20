@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #1c2735;
+    color: #fff;
+}
+.flex {
+    display: flex;
+}
+.flexdirection-c {
+    flex-direction: column;
+}
+.justify-sb {
+    justify-content: space-between;
+}
+.justify-c {
+    justify-content: center;
+}
+.align-c {
+    align-items: center;
+}
+
+#header {
+    height: 100vh;
+    background-image: url(https://colorcopy.com.ar/wp-content/uploads/2022/12/bg-0002-free-img.jpeg);
+}
+.navContainer {
+    padding-top: 1%;
+    max-width: 1140px;
+    margin: auto;
+}
+.navLinks {
+    width: 40%;
+    list-style: none;
+    padding: 0;
+}
+.logo {
+    width: 150px;
+}
+.title{
+    margin-bottom: 0;
+    line-height: 0.7;
+    font-size: 4rem;
+}
+.subTitle{
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.portada {
+    height: 100%;
+}
