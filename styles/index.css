@@ -121,3 +121,15 @@ body {
 .articulos-item:nth-child(2n) {
     flex-direction: row-reverse;
 }
+.articulo-data {
+    margin: auto 40px
+}
+.articulo-title {
+    font-size: 1.8rem;
+}
+.articulo-subTitle {
+    font-size: 1.4;
+}
+.articulo-description {
+    text-align: justify;
+}
