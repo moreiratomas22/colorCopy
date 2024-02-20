@@ -103,5 +103,21 @@ body {
     vertical-align: baseline;
 }
 .articulos{
+    margin: auto;
     margin-top: 10%;
+    width: 1140px;
+    gap: 20px;
+    padding: 20px 0;
+}
+.articulos-item {
+    background-color: #18202c;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: 0.1s ease-in-out;
+}
+.articulos-item:hover {
+    transform: scale(1.02);
+}
+.articulos-item:nth-child(2n) {
+    flex-direction: row-reverse;
 }
