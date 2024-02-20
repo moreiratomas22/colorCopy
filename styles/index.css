@@ -37,6 +37,13 @@ body {
     list-style: none;
     padding: 0;
 }
+.navLinks li {
+    transition: 0.2s ease-in-out;
+}
+.navLinks li:hover {
+    color: #ccc;
+    cursor: pointer;
+}
 .logo {
     width: 165px;
 }
@@ -52,6 +59,7 @@ body {
 }
 .portada {
     height: 100%;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .servicios-table {
@@ -132,4 +140,28 @@ body {
 }
 .articulo-description {
     text-align: justify;
+}
+
+#footer {
+    max-width: 1140px;
+    margin: auto;
+    height: 300px;
+}
+.footer-data {
+    gap: 10px;
+}
+#wt-logo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+    }
 }
