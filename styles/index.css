@@ -5,6 +5,7 @@
 body {
     background-color: #1c2735;
     color: #fff;
+    font-family: "Montserrat", sans-serif;
 }
 .flex {
     display: flex;
@@ -32,12 +33,12 @@ body {
     margin: auto;
 }
 .navLinks {
-    width: 40%;
+    width: 45%;
     list-style: none;
     padding: 0;
 }
 .logo {
-    width: 150px;
+    width: 165px;
 }
 .title{
     margin-bottom: 0;
@@ -51,4 +52,56 @@ body {
 }
 .portada {
     height: 100%;
+}
+
+.servicios-table {
+    max-width: 1140px;
+    margin: auto;
+    margin-top: 3%;
+    text-align: justify;
+    border-collapse: collapse;
+    border: 1px solid #ffffff1a;
+    background-color: #18202c;
+}
+.servicios-table th,td {
+    border-right: 1px solid #ffffff1a;
+    padding: 1% 1%;
+    height: 4rem;
+    padding: 50px 40px;
+}
+.servicios-table th {
+    font-size: 2.3rem;
+    vertical-align: baseline;
+    padding-bottom: 0;
+    width: 33.3%;
+    text-align: center;
+}
+.tableSeparation {
+    height: 3px;
+    padding: 0;
+    position: relative;
+}
+.tableSeparation::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 33.3%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.table-subtitle {
+    font-size: 1.05rem;
+    vertical-align: baseline;
+    padding-top: 0;
+    font-weight: 400;
+    font-style: italic;
+}
+.table-content {
+    vertical-align: baseline;
+}
+.articulos{
+    margin-top: 10%;
 }
