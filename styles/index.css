@@ -130,6 +130,17 @@ body {
 .table-button button:hover {
     background-color: #491d1371;
 }
+.table-arrow {
+    transition: 0.2s ease-in-out;
+}
+.table-arrow-up {
+    display: inline-block;
+    transform: rotateZ(-180deg);
+}
+.table-arrow-down {
+    display: inline-block;
+    transform: rotateZ(-360deg);
+}
 .table-hiddenContent {
     width: 100%;
     position: absolute;
