@@ -20,15 +20,15 @@
 <body>
     <header id="header">
         <nav class="navContainer flex justify-sb align-c">
-            <img class="logo"
+            <a href="/"><img class="logo"
                 src="https://colorcopy.com.ar/wp-content/uploads/2024/02/Logo-Color-Copy-letras-blancas-165x72.png"
-                alt="ColorCopy logo">
+                alt="ColorCopy logo"></a>
             <ul class="navLinks flex justify-sb align-c">
-                <li>Qué hacemos</li>
-                <li>Acerca de nosotros</li>
-                <li>Store</li>
-                <li>Clientes</li>
-                <li>Contacto</li>
+                <li><a href="/quehacemos">Qué hacemos</a></li>
+                <li><a href="/acercadenosotros">Acerca de nosotros</a></li>
+                <li><a href="store">Store</a></li>
+                <li><a href="clientes">Clientes</a></li>
+                <li><a href="contacto">Contacto</a></li>
             </ul>
         </nav>
         <div class="portada flex flexdirection-c align-c justify-c">
@@ -76,25 +76,21 @@
                     <td class="table-button"><button id="table-diseñoWeb-button">Ver más <span class="table-arrow">↓</span></button></td>
                     <td class="table-button"><button id="table-diseñoGrafico-button">Ver más <span class="table-arrow">↓</span></button></td>
                 </tr>
-                <tr id="table-grafica-extraContent" class="table-hiddenContent">
+                <tr id="table-extraContent" class="table-hiddenContent">
                     <td>
-                        <p>Texto de la grafica</p>
+                        <div>
+                            <p>Texto de la grafica</p>
+                        </div>
                     </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr id="table-diseñoWeb-extraContent" class="table-hiddenContent">
-                    <td></td>
                     <td>
-                        <p>Texto del diseño web y SEO</p>
+                        <div>
+                            <p>Texto del diseño web y SEO</p>
+                        </div>
                     </td>
-                    <td></td>
-                </tr>
-                <tr id="table-diseñoGrafico-extraContent" class="table-hiddenContent">
-                    <td></td>
-                    <td></td>
                     <td>
-                        <p>Texto del diseño gráfico</p>
+                        <div>
+                            <p>Texto del diseño gráfico</p>
+                        </div>
                     </td>
                 </tr>
             </table>
@@ -139,25 +135,34 @@
         </section>
     </main>
 
-    <footer id="footer" class="flex justify-sb align-c">
-        <div class="footer-data flex flexdirection-c">
-            <h4>Información</h4>
-            <p>Número de teléfono: <span>+54 9 3547459665</span></p>
-            <p>Email de contacto: <span>colorcopyag@gmail.com</span></p>
-            <p>Nuestras oficinas: <span>Raúl Alfonsín 151, Alta Gracia, Córdoba</span></p>
-        </div>
-        <div>
-            <h4>Horarios</h4>
-            <p>Lunes a viernes: 9 am a 1pm y 14pm a 18pm</p>
-            <p>Sábado: 9 am a 1pm</p>
-            <p>Domingo: Cerrado</p>
-        </div>
-        <div>Nuestras redes
-            <h4>IG</h4>
-            <h4>FB</h4>
-        </div>
-        <div id="wt-logo">
-            <p>whatsapp</p>
+    <footer id="footer">
+        <div class="footerContainer flex justify-sb align-c">
+            <div>
+                <h4>Información</h4>
+                <p>Número de teléfono: <span><a href="tel:+5493547459665">+54 9 3547459665</a></span></p>
+                <p>Email de contacto: <span><a href="mailto:colorcopyag@gmail.com">colorcopyag@gmail.com</a></span></p>
+                <p>Nuestras oficinas: <span><a href="https://www.google.com/maps/place/Dr.+Ra%C3%BAl+Alfons%C3%ADn+151,+Alta+Gracia,+C%C3%B3rdoba/@-31.6566838,-64.4302764,17z/data=!3m1!4b1!4m6!3m5!1s0x942d57358c719319:0xbe6cf79a346953a!8m2!3d-31.6566884!4d-64.4277015!16s%2Fg%2F11rwky_53m?entry=ttu" target="_blank" rel="noopener noreferrer">Raúl Alfonsín 151, Alta Gracia, Córdoba</a></span></p>
+                <p><a href="https://www.instagram.com/colorcopyag/?hl=es-la" target="_blank" rel="noopener noreferrer">Instagram <img src="https://seeklogo.com/images/I/instagram-logo-1494D6FE63-seeklogo.com.png" alt="logo de instagram"></a></p>
+                <p><a href="https://www.facebook.com/colorcopyag/?locale=es_LA" target="_blank" rel="noopener noreferrer">Facebook <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/300px-Facebook_icon_2013.svg.png" alt="logo de Facebook"></a></p>
+            </div>
+            <div>
+                <h4>Horarios</h4>
+                <p>Lunes a viernes: 9 am a 1pm y 14pm a 18pm</p>
+                <p>Sábado: 9 am a 1pm</p>
+                <p>Domingo: Cerrado</p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <p><a href="/">Inicio</a></p>
+                <p><a href="/quehacemos">Qué hacemos</a></p>
+                <p><a href="/acercadenosotros">Acerca de nosotros</a></p>
+                <p><a href="/store">Store</a></p>
+                <p><a href="/clientes">Clientes</a></p>
+                <p><a href="/contacto">Contacto</a></p>
+            </div>
+            <div id="wt-logo">
+                <a href="https://wa.me/+5493547459665" target="_blank" rel="noopener noreferrer"><img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="logo de whatsapp"></a>
+            </div>
         </div>
     </footer>
 
