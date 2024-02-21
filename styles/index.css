@@ -126,14 +126,10 @@ a {
     background: none;
     border: none;
     color: #fff;
-    background-color: #491d13;
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-}
-.table-button button:hover {
-    background-color: #491d1371;
 }
 .table-arrow {
     transition: 0.2s ease-in-out;
