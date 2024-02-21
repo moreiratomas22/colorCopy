@@ -28,7 +28,6 @@ body {
     background-image: url(https://colorcopy.com.ar/wp-content/uploads/2022/12/bg-0002-free-img.jpeg);
 }
 .navContainer {
-    padding-top: 1%;
     max-width: 1140px;
     margin: auto;
 }
@@ -46,6 +45,7 @@ body {
 }
 .logo {
     width: 165px;
+    cursor: pointer;
 }
 .title{
     margin-bottom: 0;
@@ -69,7 +69,9 @@ body {
     text-align: justify;
     border-collapse: collapse;
     border: 1px solid #ffffff1a;
+    border-bottom: none;
     background-color: #18202c;
+    position: relative;
 }
 .servicios-table th,td {
     border-right: 1px solid #ffffff1a;
@@ -110,6 +112,48 @@ body {
 .table-content {
     vertical-align: baseline;
 }
+.table-button {
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px solid #ffffff1a;
+}
+.table-button button {
+    background: none;
+    border: none;
+    color: #fff;
+    background-color: #491d13;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.table-button button:hover {
+    background-color: #491d1371;
+}
+.table-hiddenContent {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s ease-in-out;
+    z-index: -1;
+}
+.table-hiddenContent td {
+    width: 19.3%;
+}
+.table-hiddenContent td:has(> p) {
+    border-left: 1px solid #ffffff1a;
+    border-bottom: 1px solid #ffffff1a;
+    background-color: #18202c;
+}
+.table-shownContent {
+    transform: translateY(100%);
+}
+.table-hiddenContent td:not(:has(> p)) {
+    border: none;
+}
+
 .articulos{
     margin: auto;
     margin-top: 10%;
