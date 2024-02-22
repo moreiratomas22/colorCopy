@@ -2,6 +2,8 @@ const tableGraficaButton = document.getElementById("table-grafica-button")
 const tableDiseñoWebButton = document.getElementById("table-diseñoWeb-button")
 const tableDiseñoGraficoButton = document.getElementById("table-diseñoGrafico-button")
 
+const hamburgerMenu = document.querySelector(".hamburgerMenu")
+
 const verMasButton = (column) => {
     const tableArrow = document.querySelectorAll(".table-arrow")
     const tableGraficaExtraContent = document.getElementById("table-grafica-extraContent")
@@ -56,6 +58,18 @@ const verMasButton = (column) => {
     }
 }
 
+const hamburgerMenuOpenClose = () => {
+    const navLinks = document.querySelector(".navLinks")
+    if (navLinks.classList.contains("navLinksShown")) {
+        navLinks.classList.remove("navLinksShown")
+    } else {
+        console.log("hola")
+        navLinks.classList.add("navLinksShown")
+    }
+}
+
 tableGraficaButton.addEventListener("click", () => { verMasButton(0) })
 tableDiseñoWebButton.addEventListener("click", () => { verMasButton(1) })
 tableDiseñoGraficoButton.addEventListener("click", () => { verMasButton(2) })
+
+hamburgerMenu.addEventListener("click", hamburgerMenuOpenClose)

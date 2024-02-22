@@ -33,6 +33,9 @@ a {
     min-height: 740px;
     background-image: url(https://colorcopy.com.ar/wp-content/uploads/2022/12/bg-0002-free-img.jpeg);
 }
+.hamburgerMenu {
+    display: none;
+}
 .navContainer {
     max-width: 1140px;
     margin: auto;
@@ -66,6 +69,23 @@ a {
 .portada {
     height: 100%;
     animation: fadeIn 2s ease-in-out;
+}
+@media (max-width:840px) {
+    .navLinks {
+        transform: translateY(-150%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #18202c;
+        transition: 0.2s ease-in-out;
+        flex-direction: column;
+    }
+    .navLinksShown {
+        transform: translateY(100%);
+    }
+    .hamburgerMenu {
+        display: block;
+    }
 }
 
 .servicios-table {
