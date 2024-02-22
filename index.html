@@ -21,8 +21,8 @@
     <header id="header">
         <nav class="navContainer flex justify-sb align-c">
             <a href="/"><img class="logo"
-                src="https://colorcopy.com.ar/wp-content/uploads/2024/02/Logo-Color-Copy-letras-blancas-165x72.png"
-                alt="ColorCopy logo"></a>
+                    src="https://colorcopy.com.ar/wp-content/uploads/2024/02/Logo-Color-Copy-letras-blancas-165x72.png"
+                    alt="ColorCopy logo"></a>
             <ul class="navLinks flex justify-sb align-c">
                 <li><a href="/quehacemos">Qué hacemos</a></li>
                 <li><a href="/acercadenosotros">Acerca de nosotros</a></li>
@@ -42,58 +42,49 @@
     <main>
         <section>
             <!-- <h2> ¿Servicios?</h2> -->
-            <table class="servicios-table">
-                <tr>
-                    <th>Gráfica</th>
-                    <th>Diseño Web y SEO</th>
-                    <th>Diseño Gráfico</th>
-                </tr>
-                <tr>
-                    <td class="table-subtitle">Impresiones de calidad en todo tipo de soportes para tu marca.</td>
-                    <td class="table-subtitle">Creamos presencia para tu marca en buscadores.</td>
-                    <td class="table-subtitle">Construimos la imagen de tu marca desde con diseños únicos e increíbles.
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tableSeparation"></td>
-                    <td class="tableSeparation"></td>
-                    <td class="tableSeparation"></td>
-                </tr>
-                <tr>
-                    <td class="table-content">Plasmamos los diseños deseados por nuestros clientes en piezas fisicas
+            <div class="servicios-table flex">
+                <div class="servicioContainer">
+                    <h3 class="table-title">Gráfica</h3>
+                    <h4 class="table-subtitle">Impresiones de calidad en todo tipo de soportes para tu marca.</h4>
+                    <div class="tableSeparation"></div>
+                    <p class="table-content">Plasmamos los diseños deseados por nuestros clientes en piezas fisicas
                         seleccionadas para cada
-                        situación, empleando tecnologia de última generación e insumos gráficos de primera calidad.</td>
-                    <td class="table-content">Diseñamos sitios a medida de acuerdo a tu presupuesto y los requerimientos
+                        situación, empleando tecnologia de última generación e insumos gráficos de primera calidad.</p>
+                    <button id="table-grafica-button" class="table-button">Ver más <span class="table-arrow">↓</span></button>
+                    <div id="table-grafica-extraContent" class="table-hiddenContent">
+                        <p>Texto de la grafica</p>
+                    </div>
+                </div>
+                <div class="servicioContainer">
+                    <h3 class="table-title">Diseño Web y SEO</h3>
+                    <h4 class="table-subtitle">Creamos presencia para tu marca en buscadores.</h4>
+                    <div class="tableSeparation"></div>
+                    <p class="table-content">Diseñamos sitios a medida de acuerdo a tu presupuesto y los
+                        requerimientos
                         de tu marca. También
                         implementamos estrategias de posicionamiento SEO para que tengas presencia en internet en 30
-                        días o menos.</td>
-                    <td class="table-content">Nuestro equipo de diseñadores da forma a tus ideas y las convierte en una
+                        días o menos.</p>
+                    <button id="table-diseñoWeb-button" class="table-button">Ver más <span class="table-arrow">↓</span></button>
+                    <div id="table-disenoWebYSeo-extraContent" class="table-hiddenContent">
+                        <p>Texto del diseño web y SEO</p>
+                    </div>
+                </div>
+                <div class="servicioContainer">
+                    <h3 class="table-title">Diseño Gráfico</h3>
+                    <h4 class="table-subtitle">Construimos la imagen de tu marca desde con diseños únicos e
+                        increíbles.</h4>
+                    <div class="tableSeparation"></div>
+                    <p class="table-content">Nuestro equipo de diseñadores da forma a tus ideas y las convierte en
+                        una
                         imagen de marca para
-                        tu empresa.</td>
-                </tr>
-                <tr>
-                    <td class="table-button"><button id="table-grafica-button">Ver más <span class="table-arrow">↓</span></button></td>
-                    <td class="table-button"><button id="table-diseñoWeb-button">Ver más <span class="table-arrow">↓</span></button></td>
-                    <td class="table-button"><button id="table-diseñoGrafico-button">Ver más <span class="table-arrow">↓</span></button></td>
-                </tr>
-                <tr id="table-extraContent" class="table-hiddenContent">
-                    <td>
-                        <div>
-                            <p>Texto de la grafica</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <p>Texto del diseño web y SEO</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <p>Texto del diseño gráfico</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+                        tu empresa.</p>
+                    <button id="table-diseñoGrafico-button" class="table-button">Ver más <span
+                                class="table-arrow">↓</span></button>
+                    <div id="table-disenoGrafico-extraContent" class="table-hiddenContent">
+                        <p>Texto del diseño gráfico</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="articulos flex flexdirection-c">
@@ -139,11 +130,20 @@
         <div class="footerContainer flex justify-sb align-c">
             <div>
                 <h4>Información</h4>
-                <p>Número de teléfono: <span><a href="tel:+5493547459665">+54 9 3547459665</a></span></p>
-                <p>Email de contacto: <span><a href="mailto:colorcopyag@gmail.com">colorcopyag@gmail.com</a></span></p>
-                <p>Nuestras oficinas: <span><a href="https://www.google.com/maps/place/Dr.+Ra%C3%BAl+Alfons%C3%ADn+151,+Alta+Gracia,+C%C3%B3rdoba/@-31.6566838,-64.4302764,17z/data=!3m1!4b1!4m6!3m5!1s0x942d57358c719319:0xbe6cf79a346953a!8m2!3d-31.6566884!4d-64.4277015!16s%2Fg%2F11rwky_53m?entry=ttu" target="_blank" rel="noopener noreferrer">Raúl Alfonsín 151, Alta Gracia, Córdoba</a></span></p>
-                <p><a href="https://www.instagram.com/colorcopyag/?hl=es-la" target="_blank" rel="noopener noreferrer">Instagram <img src="https://seeklogo.com/images/I/instagram-logo-1494D6FE63-seeklogo.com.png" alt="logo de instagram"></a></p>
-                <p><a href="https://www.facebook.com/colorcopyag/?locale=es_LA" target="_blank" rel="noopener noreferrer">Facebook <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/300px-Facebook_icon_2013.svg.png" alt="logo de Facebook"></a></p>
+                <a href="tel:+5493547459665"><img src="./assets/telefono.png" alt="logo de teléfono" srcset=""></a>
+                <a href="mailto:colorcopyag@gmail.com"><img src="./assets/correo-electronico.png" alt="logo de correo" srcset=""></a>
+                <a href="https://www.instagram.com/colorcopyag/?hl=es-la" target="_blank"
+                        rel="noopener noreferrer"><img
+                            src="./assets/instagram.png"
+                            alt="logo de instagram"></a>
+                <a href="https://www.facebook.com/colorcopyag/?locale=es_LA" target="_blank"
+                        rel="noopener noreferrer"><img
+                            src="./assets/facebook.png"
+                            alt="logo de Facebook"></a>
+                <p>Nuestras oficinas: <span><a
+                            href="https://www.google.com/maps/place/Dr.+Ra%C3%BAl+Alfons%C3%ADn+151,+Alta+Gracia,+C%C3%B3rdoba/@-31.6566838,-64.4302764,17z/data=!3m1!4b1!4m6!3m5!1s0x942d57358c719319:0xbe6cf79a346953a!8m2!3d-31.6566884!4d-64.4277015!16s%2Fg%2F11rwky_53m?entry=ttu"
+                            target="_blank" rel="noopener noreferrer">Raúl Alfonsín 151, Alta Gracia, Córdoba</a></span>
+                </p>
             </div>
             <div>
                 <h4>Horarios</h4>
@@ -161,7 +161,9 @@
                 <p><a href="/contacto">Contacto</a></p>
             </div>
             <div id="wt-logo">
-                <a href="https://wa.me/+5493547459665" target="_blank" rel="noopener noreferrer"><img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="logo de whatsapp"></a>
+                <a href="https://wa.me/+5493547459665" target="_blank" rel="noopener noreferrer"><img
+                        src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png"
+                        alt="logo de whatsapp"></a>
             </div>
         </div>
     </footer>
