@@ -62,9 +62,10 @@ const hamburgerMenuOpenClose = () => {
     const navLinks = document.querySelector(".navLinks")
     if (navLinks.classList.contains("navLinksShown")) {
         navLinks.classList.remove("navLinksShown")
+        hamburgerMenu.classList.remove("close-icon")
     } else {
-        console.log("hola")
         navLinks.classList.add("navLinksShown")
+        hamburgerMenu.classList.add("close-icon")
     }
 }
 
