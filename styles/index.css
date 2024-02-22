@@ -232,10 +232,13 @@ a {
     background-color: #18202c;
 }
 .footerContainer {
+    width: 90%;
     max-width: 1140px;
     height: 100%;
     padding-top: 2%;
     margin: auto;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .footer-information-imgs {
     letter-spacing: 16px;
