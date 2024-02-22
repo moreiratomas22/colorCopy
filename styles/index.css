@@ -30,7 +30,11 @@ a {
 
 #header {
     height: 100vh;
+    min-height: 740px;
     background-image: url(https://colorcopy.com.ar/wp-content/uploads/2022/12/bg-0002-free-img.jpeg);
+}
+.hamburgerMenu {
+    display: none;
 }
 .navContainer {
     max-width: 1140px;
@@ -66,13 +70,29 @@ a {
     height: 100%;
     animation: fadeIn 2s ease-in-out;
 }
-/* Modicar tabla....................................................... */
+@media (max-width:840px) {
+    .navLinks {
+        transform: translateY(-150%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #18202c;
+        transition: 0.2s ease-in-out;
+        flex-direction: column;
+    }
+    .navLinksShown {
+        transform: translateY(100%);
+    }
+    .hamburgerMenu {
+        display: block;
+    }
+}
+
 .servicios-table {
     max-width: 1140px;
     margin: auto;
     margin-top: 3%;
     text-align: justify;
-    border-collapse: collapse;
 }
 .servicioContainer {
     border: 1px solid #ffffff1a;
@@ -154,12 +174,31 @@ a {
 .table-shownContent {
     transform: translateY(90%);
 }
-/* hasta aca.......................................................................... */
+@media (min-width:832) and (max-width:940px) {
+    .servicioContainer {
+        min-width: 200px;
+    }
+    .servicios-table {
+        flex-wrap: wrap;
+        row-gap: 220px;
+    }
+}
+@media (min-width:0) and (max-width:832px) {
+    .servicioContainer {
+        width: 90%;
+    }
+    .servicios-table {
+        flex-wrap: wrap;
+        row-gap: 220px;
+        margin-bottom: 220px;
+    }
+}
+
 .articulos{
     margin: auto;
     margin-top: 10%;
     margin-bottom: 10%;
-    width: 1140px;
+    max-width: 1140px;
     gap: 20px;
     padding: 20px 0;
 }
@@ -168,6 +207,9 @@ a {
     border-radius: 2rem;
     overflow: hidden;
     transition: 0.1s ease-in-out;
+}
+.articulos-item img {
+    width: 26.3%;
 }
 .articulos-item:hover {
     transform: scale(1.02);
@@ -187,16 +229,40 @@ a {
 .articulo-description {
     text-align: justify;
 }
+@media (min-width:0) and (max-width:665px) {
+    .articulos {
+        margin: auto 4%;
+    }
+    .articulos-item:nth-child(2n) {
+        flex-direction: column;
+    }
+    .articulos-item {
+        padding-top: 4%;
+        flex-direction: column;
+    }
+    .articulos-item img {
+        margin: 4% auto;
+        border-radius: 25%;
+        min-width: 150px;
+    }
+}
 
 #footer {
     width: 100%;
-    height: 300px;
     background-color: #18202c;
 }
 .footerContainer {
+    width: 90%;
     max-width: 1140px;
     height: 100%;
+    padding-top: 2%;
     margin: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-information-imgs {
+    letter-spacing: 16px;
+    margin-bottom: 10px;
 }
 #footer span {
     border-bottom: 1px solid #fff;
@@ -211,7 +277,7 @@ a {
     right: 30px;
 }
 #footer img{
-    width: 18px;
+    width: 32px;
 }
 #wt-logo img {
     width: 48px;
