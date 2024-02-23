@@ -37,7 +37,7 @@ a {
 #header {
     height: 100vh;
     min-height: 740px;
-    background-image: url(https://colorcopy.com.ar/wp-content/uploads/2022/12/bg-0002-free-img.jpeg);
+    background-image: url("../assets/portada.jpeg");
 }
 
 .hamburgerMenu {
