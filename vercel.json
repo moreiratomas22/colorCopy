@@ -1,6 +1,5 @@
 {
-    "rewrites": [
-        {"source": "/contacto",
-    "destination": "/pages/contact.html"},
-    ]
+  "redirects": [
+    { "source": "/me", "destination": "/profile.html", "permanent": false }
+  ]
 }
