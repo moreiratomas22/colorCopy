@@ -1,0 +1,35 @@
+.wwdoContainer {
+    max-width: 1140px;
+    margin: auto;
+    color: #fff;
+}
+.cardContainer {
+    border: 1px solid #ffffff3a;
+    background-color: #18202c;
+    margin: 20px auto;
+}
+.publicidad-textContainer {
+   width: 60%;
+}
+.publicidad-itemsContainer {
+    width: 40%;
+}
+.publicidad-itemsContainer ul {
+    list-style-type: none;
+}
+.publicidad-itemsContainer ul li::before {
+    content: "\2713";
+}
+.proyectContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.proyectHorizontalImages {
+    width: 50%;
+    overflow: hidden;
+    height: 600px;
+}
+.proyectVerticalImages{
+    width: 25%;
+    height: 600px;
+}
