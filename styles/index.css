@@ -168,12 +168,11 @@ a {
 
 .servicioContainer {
     border: 1px solid #ffffff1a;
-    border-bottom: 0;
     background-color: #18202c;
     width: 33.3%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 4fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 10fr 1fr;
     grid-template-areas:
         "title"
         "subtitle"
@@ -183,11 +182,13 @@ a {
     ;
     padding: 50px 40px;
     position: relative;
+    overflow: hidden;
 }
 
 .table-title {
     grid-area: title;
     text-align: center;
+    z-index: 4;
 }
 
 .table-subtitle {
@@ -209,9 +210,20 @@ a {
 }
 
 .table-content {
+    grid-area: description;
     vertical-align: baseline;
 }
 
+.table-buttonContainer {
+    grid-area: button;
+    background-color: inherit;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .table-button {
     background: none;
     border: none;
@@ -222,8 +234,6 @@ a {
     width: fit-content;
     height: fit-content;
     padding: 0;
-    justify-self: center;
-    align-self: center;
 }
 
 .table-arrow {
@@ -242,19 +252,19 @@ a {
 
 .table-hiddenContent {
     width: 100%;
+    height: 70%;
     position: absolute;
-    bottom: -1px;
-    z-index: -1;
+    bottom: -70%;
+    z-index: 3;
     transition: 0.2s ease-in-out;
     background-color: #18202c;
     outline: 1px solid #ffffff1a;
     padding: 50px 40px;
     box-sizing: border-box;
-    width: 100%;
 }
 
 .table-shownContent {
-    transform: translateY(90%);
+    transform: translateY(-125%);
 }
 
 @media (min-width:832px) and (max-width:940px) {
