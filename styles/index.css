@@ -172,7 +172,7 @@ a {
     width: 33.3%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr 10fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
     grid-template-areas:
         "title"
         "subtitle"
@@ -181,8 +181,10 @@ a {
         "button"
     ;
     padding: 50px 40px;
+    padding-bottom: 0;
     position: relative;
     overflow: hidden;
+    line-height: 1.6rem;
 }
 
 .table-title {
@@ -223,6 +225,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid #ffffff1a;
 }
 .table-button {
     background: none;
@@ -258,7 +261,6 @@ a {
     z-index: 3;
     transition: 0.2s ease-in-out;
     background-color: #18202c;
-    outline: 1px solid #ffffff1a;
     padding: 50px 40px;
     box-sizing: border-box;
 }
