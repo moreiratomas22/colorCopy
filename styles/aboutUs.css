@@ -1,0 +1,27 @@
+main {
+    max-width: 1140px;
+    margin: auto;
+    text-align: justify;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.sectionTitle {
+    font-size: 3rem;
+    margin-bottom: 35px;
+}
+.sectionSubTitle:not(:last-child) {
+    font-size: 1.4rem;
+    margin-bottom: 35px;
+}
+.aboutUsSectionSeparation {
+    width: 2px;
+    height: 120px;
+    background-color: #fff;
+}
+.subTitleContainer {
+    width: 30%;
+}
+.textContainer {
+    width: 60%;
+    line-height: 1.7rem;
+}
