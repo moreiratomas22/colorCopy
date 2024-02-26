@@ -350,6 +350,7 @@ a {
 #footer {
     width: 100%;
     background-color: #18202c;
+    padding-bottom: 30px;
 }
 
 .footerContainer {
@@ -389,6 +390,9 @@ p {
 
 #wt-logo img {
     width: 48px;
+}
+.footerNavLinks {
+    list-style: none;
 }
 
 @keyframes fadeIn {
