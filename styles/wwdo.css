@@ -1,7 +1,7 @@
 .wwdoContainer {
     max-width: 1140px;
     margin: auto;
-    color: #fff;
+    color: var(--color-text);
 }
 .wwdoSection {
     margin: 30px auto;
@@ -11,14 +11,14 @@
     margin-bottom: 20px;
 }
 .cardContainer {
-    border-left: 1px solid #ffffff3a;
-    border-right: 1px solid #ffffff3a;
-    border-top: 1px solid #ffffff3a;
-    background-color: #18202c;
+    border-left: 1px solid var(--color-secondary);
+    border-right: 1px solid var(--color-secondary);
+    border-top: 1px solid var(--color-secondary);
+    background-color: var(--color-primary);
     margin: auto;
 }
 .cardContainer:last-child {
-    border-bottom: 1px solid #ffffff3a;
+    border-bottom: 1px solid var(--color-secondary);
 }
 .publicidad-textContainer {
     width: 60%;

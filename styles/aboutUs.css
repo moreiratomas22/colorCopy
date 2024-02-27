@@ -16,7 +16,7 @@ main {
 .aboutUsSectionSeparation {
     width: 2px;
     height: 120px;
-    background-color: #fff;
+    background-color: var(--color-text);
 }
 .subTitleContainer {
     width: 30%;

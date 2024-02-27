@@ -1,11 +1,23 @@
+:root {
+/*     --color-bg: #E9F2F9;
+    --color-text: #000000;
+    --color-primary: #F26C4F;
+    --color-secondary: #00000038; */
+
+    --color-bg: #1c2735;
+    --color-text: #fff;
+    --color-primary: #18202c;
+    --color-secondary: #ffffff1a;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #1c2735;
-    color: #fff;
+    background-color: var(--color-bg);
+    color: var(--color-text);
     font-family: "Montserrat", sans-serif;
 }
 
@@ -102,7 +114,7 @@ a {
         position: absolute;
         top: 0;
         right: 0;
-        background-color: #18202c;
+        background-color: var(--color-primary);
         transition: 0.2s ease-in-out;
         flex-direction: column;
         width: 100%;
@@ -121,7 +133,7 @@ a {
     .line {
         width: 30px;
         height: 3px;
-        background-color: #fff;
+        background-color: var(--color-text);
         margin: 6px 0;
         transition: 0.2s ease-in-out;
     }
@@ -167,8 +179,8 @@ a {
 }
 
 .servicioContainer {
-    border: 1px solid #ffffff1a;
-    background-color: #18202c;
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-primary);
     width: 33.3%;
     display: grid;
     grid-template-columns: 1fr;
@@ -208,7 +220,7 @@ a {
     width: 33.3%;
     justify-self: center;
     align-self: center;
-    background-color: #fff;
+    background-color: var(--color-text);
 }
 
 .table-content {
@@ -225,12 +237,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #ffffff1a;
+    border-top: 1px solid var(--color-secondary);
 }
 .table-button {
     background: none;
     border: none;
-    color: #fff;
+    color: var(--color-text);
     border-radius: 20px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -260,7 +272,7 @@ a {
     bottom: -70%;
     z-index: 3;
     transition: 0.2s ease-in-out;
-    background-color: #18202c;
+    background-color: var(--color-primary);
     padding: 50px 40px;
     box-sizing: border-box;
 }
@@ -304,7 +316,7 @@ a {
 }
 
 .articulos-item {
-    background-color: #18202c;
+    background-color: var(--color-primary);
     border-radius: 2rem;
     overflow: hidden;
     transition: 0.1s ease-in-out;
@@ -361,7 +373,7 @@ a {
 
 #footer {
     width: 100%;
-    background-color: #18202c;
+    background-color: var(--color-primary);
     padding-bottom: 30px;
 }
 
@@ -381,7 +393,7 @@ a {
 }
 
 #footer span {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--color-text);
     transition: 0.2s ease-in-out;
 }
 
