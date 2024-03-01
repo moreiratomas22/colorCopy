@@ -33,7 +33,7 @@
     width: fit-content;
     height: fit-content;
     background-color: #4C2882;
-    color: #fff;
+    color: var(--color-text);
     cursor: pointer;
     transition: 0.2s ease-in-out;
     margin: auto;
@@ -47,5 +47,5 @@
 .contactInformationSeparation {
     height: 4px;
     width: 10%;
-    background-color: #fff;
+    background-color: var(--color-text);
 }
