@@ -8,6 +8,7 @@
     --color-text: #fff;
     --color-primary: #18202c;
     --color-secondary: #ffffff1a;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -419,6 +420,46 @@ p {
 }
 .footerNavLinks {
     list-style: none;
+}
+#toTheTop {
+    transition: 0.2s ease-in-out;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+    cursor: pointer;
+    border-radius: 20px;
+}
+.toTheTop-line1 {
+    margin: auto;
+    background-color: #fff;
+    width: 3px;
+    height: 18px;
+    transform: rotateZ(45deg) translate(7px, 15px);
+    border-radius: 50px;
+}
+.toTheTop-line2 {
+    background-color: #fff;
+    width: 3px;
+    height: 30px;
+    margin: auto;
+    border-radius: 50px;
+
+}
+.toTheTop-line3 {
+    margin: auto;
+    background-color: #fff;
+    width: 3px;
+    height: 18px;
+    transform: rotateZ(-45deg) translate(27px, -19px);
+    border-radius: 50px;
+
+}
+.fadeOut {
+    visibility: hidden;
+    opacity: 0;
+}
+.fadeIn {
+    visibility: visible;
+    opacity: 1;
 }
 
 @keyframes fadeIn {

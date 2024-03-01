@@ -1,6 +1,7 @@
 const tableGraficaButton = document.getElementById("table-grafica-button")
 const tableDiseñoWebButton = document.getElementById("table-diseñoWeb-button")
 const tableDiseñoGraficoButton = document.getElementById("table-diseñoGrafico-button")
+const toTheTopButton = document.getElementById("toTheTop")
 
 const hamburgerMenu = document.querySelector(".hamburgerMenu")
 
@@ -22,7 +23,7 @@ const verMasButton = (column) => {
                 tableArrow[0].classList.add("table-arrow-up")
                 tableArrow[0].classList.remove("table-arrow-down")
                 tableArrow[1].classList.remove("table-arrow-up")
-                tableArrow[2].classList.remove("table-arrow-up") 
+                tableArrow[2].classList.remove("table-arrow-up")
             }
             break
         case 1:
@@ -31,7 +32,7 @@ const verMasButton = (column) => {
                 tableArrow[1].classList.add("table-arrow-down")
                 tableArrow[1].classList.remove("table-arrow-up")
             } else {
-                tableGraficaExtraContent.classList.remove("table-shownContent") 
+                tableGraficaExtraContent.classList.remove("table-shownContent")
                 tableDisenoWebYSeoExtraContent.classList.add("table-shownContent")
                 tableDisenoGraficoExtraContent.classList.remove("table-shownContent")
                 tableArrow[1].classList.add("table-arrow-up")
@@ -74,3 +75,20 @@ tableDiseñoWebButton.addEventListener("click", () => { verMasButton(1) })
 tableDiseñoGraficoButton.addEventListener("click", () => { verMasButton(2) })
 
 hamburgerMenu.addEventListener("click", hamburgerMenuOpenClose)
+
+const toTheTop = () => {
+    window.scrollTo(0, 0)
+}
+const fadeIn = () => {
+    toTheTopButton.classList.add("fadeIn")
+    toTheTopButton.classList.remove("fadeOut")
+}
+const fadeOut = () => {
+    toTheTopButton.classList.remove("fadeIn")
+    toTheTopButton.classList.add("fadeOut")
+}
+
+toTheTopButton.addEventListener("click", toTheTop)
+window.addEventListener("scroll", () => {
+    (window.scrollY >= 200) ? fadeIn() : fadeOut()
+})
