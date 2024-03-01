@@ -430,6 +430,15 @@ a {
 p {
     margin-bottom: 10px;
 }
+.table-schedules {
+    border-collapse: collapse;
+    text-align: left;
+}
+.table-schedules td,th {
+    padding: 5px;
+    border-left: 1px solid var(--color-secondary);
+
+}
 
 #wt-logo {
     position: fixed;
