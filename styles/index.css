@@ -65,8 +65,7 @@ a {
     min-height: 740px;
     background-attachment: fixed;
     background-image: url("../assets/portada.jpg");
-/*     background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1708560000&semt=ais");
- */    background-size:cover;
+    background-size:cover;
     color: var(--color-text);
 }
 
@@ -473,14 +472,14 @@ p {
     margin: auto;
     background-color: #fff;
     width: 3px;
-    height: 18px;
-    transform: rotateZ(45deg) translate(7px, 15px);
+    height: 12px;
+    transform: rotateZ(45deg) translate(5px, 10px);
     border-radius: 50px;
 }
 .toTheTop-line2 {
     background-color: #fff;
     width: 3px;
-    height: 30px;
+    height: 20px;
     margin: auto;
     border-radius: 50px;
 
@@ -489,8 +488,8 @@ p {
     margin: auto;
     background-color: #fff;
     width: 3px;
-    height: 18px;
-    transform: rotateZ(-45deg) translate(27px, -19px);
+    height: 12px;
+    transform: rotateZ(-45deg) translate(18px, -13px);
     border-radius: 50px;
 
 }
