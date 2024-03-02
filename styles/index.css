@@ -325,8 +325,8 @@ a {
 
     .servicios-table {
         flex-wrap: wrap;
-        row-gap: 150px;
-        margin-bottom: 150px;
+        row-gap: 30px;
+        margin-bottom: 50px;
     }
     .table-title {
         margin-bottom: 12px;
