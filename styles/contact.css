@@ -1,34 +1,45 @@
 .mainContainer {
+    width: 90%;
     max-width: 1140px;
     margin: 40px auto;
 }
+
 .sectionTitle {
     font-size: 3rem;
     margin-bottom: 35px;
 }
+
 .contactContainer {
     margin: 20px auto;
 }
+
 .form {
     width: 60%;
 }
+
 .nameFormContainer {
     width: 100%;
     gap: 10px;
 }
+
 .nameFormContainer div {
     width: 50%;
 }
-.form input,textarea {
+
+.form input,
+textarea {
     border: none;
     padding: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     border-radius: 5px;
 }
-.form input,textarea:focus {
+
+.form input,
+textarea:focus {
     outline: none;
 }
+
 .formButton {
     width: fit-content;
     height: fit-content;
@@ -38,14 +49,49 @@
     transition: 0.2s ease-in-out;
     margin: auto;
 }
+
 .formButton:hover {
     background-color: #4c288259;
 }
+
+.contactInformationContainer {
+    width: 30%;
+}
+
 .contactInformationContainer p {
     margin-bottom: 0;
 }
+
 .contactInformationSeparation {
     height: 4px;
     width: 10%;
     background-color: var(--color-text);
+}
+
+.google-map {
+    width: 100%;
+    height: 200px;
+}
+
+@media (672px < width < 897px) {
+    .form {
+        width: 50%;
+    }
+    .contactInformationContainer {
+        width: 40%;
+    }
+}
+@media (width < 673px) {
+    .contactContainer {
+        flex-direction: column;
+    }
+    .form {
+        width: 100%;
+    }
+    .contactInformationContainer {
+        width: 100%;
+    }
+    .google-map {
+        height: 300px;
+    }
 }
