@@ -1,15 +1,19 @@
 .wwdoContainer {
+    width: 90%;
     max-width: 1140px;
     margin: auto;
     color: var(--color-text);
 }
+
 .wwdoSection {
     margin: 30px auto;
 }
+
 .sectionTitle {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+
 .cardContainer {
     border-left: 1px solid var(--color-secondary);
     border-right: 1px solid var(--color-secondary);
@@ -17,25 +21,36 @@
     background-color: var(--color-primary);
     margin: auto;
 }
+
 .cardContainer:last-child {
     border-bottom: 1px solid var(--color-secondary);
 }
+
 .publicidad-textContainer {
     width: 60%;
+}
+
+.publicidad-textContainer h3 {
     padding: 2rem;
 }
-.publicidad-textContainer h3 {
-    margin-bottom: 10px;
-}
+
 .publicidad-textContainer p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
     line-height: 1.688rem;
 }
+
 .publicidad-itemsContainer {
-    padding: 2rem;
-    width: 20%;
+    width: 30%;
     background-color: #4564c2;
     position: relative;
 }
+
+.publicidad-itemsContainer ul {
+    padding: 2rem;
+}
+
 .publicidad-itemsContainer::after {
     content: "";
     width: 100%;
@@ -48,28 +63,93 @@
     left: 0;
     opacity: 0.1;
 }
+
 .publicidad-itemsContainer ul {
     list-style-type: none;
 }
+
+.publicidad-itemsContainer ul li {
+    position: relative;
+    padding-left: 20px;
+}
+
 .publicidad-itemsContainer ul li:not(:last-child) {
     margin-bottom: 10px;
 }
+
 .publicidad-itemsContainer ul li::before {
+    position: absolute;
     content: "\2713";
+    left: 0;
+    top: -2px;
 }
-.proyectContainer{
+
+.proyectContainer {
     display: flex;
     flex-wrap: wrap;
 }
+
 .proyectHorizontalImages {
     width: 50%;
     overflow: hidden;
     height: 600px;
 }
+
 .proyectHorizontalImages img {
     height: 50%;
 }
-.proyectVerticalImages{
-    width: 25%;
+
+.proyectVerticalImages {
     height: 600px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.proyectVerticalImages img {
+    width: 50%;
+    height: 100%;
+}
+
+@media (width < 759px) {
+    .cardContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .publicidad-textContainer {
+        width: 100%;
+    }
+
+    .publicidad-itemsContainer {
+        width: 100%;
+    }
+
+    .proyectContainer {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .proyectContainer {
+        gap: 10px;
+    }
+    .proyectHorizontalImages {
+        width: 100%;
+        gap: 10px;
+        height: fit-content;
+    }
+
+    .proyectHorizontalImages img {
+        height: auto;
+    }
+
+    .proyectVerticalImages {
+        width: 100%;
+        gap: 10px;
+        height: fit-content;
+    }
+    .proyectVerticalImages {
+        height: auto;
+    }
 }
