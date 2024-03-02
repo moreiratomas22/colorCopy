@@ -20,7 +20,7 @@
     <header id="header">
         <nav class="navContainer flex justify-sb align-c">
             <a href="/"><img class="logo" src="../assets/colorC-logo.png" alt="ColorCopy logo"></a>
-            <ul class="navLinks flex justify-sb align-c">
+            <ul class="navLinks gap-20 flex justify-sb align-c">
                 <li><a href="./wwdo.html">Qué hacemos</a></li>
                 <li><a href="./aboutUs.html">Acerca de nosotros</a></li>
                 <li><a href="./store.html">Store</a></li>
@@ -82,9 +82,19 @@
             </div>
             <div>
                 <h4>Horarios</h4>
-                <p>Lunes a viernes: 9 am a 1pm y 14pm a 18pm</p>
-                <p>Sábado: 9 am a 1pm</p>
-                <p>Domingo: Cerrado</p>
+                <table class="table-schedules">
+                    <tr>
+                        <th>Lunes - Viernes</th>
+                        <th>Sábado</th>
+                    </tr>
+                    <tr>
+                        <td>9:00 AM - 1:00 PM</td>
+                        <td>9:00 AM - 1:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>14:00 PM - 18:00 PM</td>
+                    </tr>
+                </table>
             </div>
             <div>
                 <h4>Enlaces</h4>
@@ -97,7 +107,12 @@
                     <li><a href="./contact.html">Contacto</a></li>
                 </ul>
             </div>
-            <div id="wt-logo">
+            <div id="wt-logo" class="flex flexdirection-c gap-20">
+                <button id="toTheTop" class="fadeOut">
+                    <div class="toTheTop-line1"></div>
+                    <div class="toTheTop-line2"></div>
+                    <div class="toTheTop-line3"></div>
+                </button>
                 <a href="https://wa.me/+5493547459665" target="_blank" rel="noopener noreferrer"><img
                         src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png"
                         alt="logo de whatsapp"></a>
@@ -105,6 +120,7 @@
         </div>
     </footer>
 
+    <script src="../js/utils.js"></script>
 </body>
 
 </html>
