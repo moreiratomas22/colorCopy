@@ -20,7 +20,7 @@
     <header id="header">
         <nav class="navContainer flex justify-sb align-c">
             <a href="/"><img class="logo" src="../assets/colorC-logo.png" alt="ColorCopy logo"></a>
-            <ul class="navLinks flex justify-sb align-c">
+            <ul class="navLinks gap-20 flex justify-sb align-c">
                 <li><a href="./wwdo.html">Qué hacemos</a></li>
                 <li><a href="./aboutUs.html">Acerca de nosotros</a></li>
                 <li><a href="./store.html">Store</a></li>
@@ -36,13 +36,12 @@
         <div class="portada flex flexdirection-c align-c justify-c">
             <h1 class="title">¡Hablemos!</h1>
             <h4 class="subTitle">Estemos en contacto</h4>
-
         </div>
     </header>
 
     <main class="mainContainer">
         <h2 class="sectionTitle">Envíanos un mensaje</h2>
-        <div class="contactContainer flex justify-sb">
+        <div class="contactContainer flex justify-sb gap-20">
             <form class="form flex flexdirection-c" method="post" action="">
                 <div class="nameFormContainer flex gap-10">
                     <div class="flex flexdirection-c">
@@ -75,6 +74,7 @@
                     <img class="tinyLogo" src="../assets/ubicacion.png" alt="Logo de ubicacion">
                     <p><a href="https://www.google.com/maps/place/Dr.+Ra%C3%BAl+Alfons%C3%ADn+151,+Alta+Gracia,+C%C3%B3rdoba/@-31.6566838,-64.4302764,17z/data=!3m1!4b1!4m6!3m5!1s0x942d57358c719319:0xbe6cf79a346953a!8m2!3d-31.6566884!4d-64.4277015!16s%2Fg%2F11rwky_53m?entry=ttu" target="_blank" rel="noopener noreferrer">Raúl Alfonsín 157, Alta Gracia Córdoba</a></p>
                 </div>
+                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.1656163245348!2d-64.4277015!3d-31.656688400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d57358c719319%3A0xbe6cf79a346953a!2sDr.%20Ra%C3%BAl%20Alfons%C3%ADn%20151%2C%20Alta%20Gracia%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1709397721651!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </main>
@@ -103,9 +103,19 @@
             </div>
             <div>
                 <h4>Horarios</h4>
-                <p>Lunes a viernes: 9 am a 1pm y 14pm a 18pm</p>
-                <p>Sábado: 9 am a 1pm</p>
-                <p>Domingo: Cerrado</p>
+                <table class="table-schedules">
+                    <tr>
+                        <th>Lunes - Viernes</th>
+                        <th>Sábado</th>
+                    </tr>
+                    <tr>
+                        <td>9:00 AM - 1:00 PM</td>
+                        <td>9:00 AM - 1:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>14:00 PM - 18:00 PM</td>
+                    </tr>
+                </table>
             </div>
             <div>
                 <h4>Enlaces</h4>
@@ -118,14 +128,20 @@
                     <li><a href="./contact.html">Contacto</a></li>
                 </ul>
             </div>
-            <div id="wt-logo">
+            <div id="wt-logo" class="flex flexdirection-c gap-10">
+                <button id="toTheTop" class="fadeOut">
+                    <div class="toTheTop-line1"></div>
+                    <div class="toTheTop-line2"></div>
+                    <div class="toTheTop-line3"></div>
+                </button>
                 <a href="https://wa.me/+5493547459665" target="_blank" rel="noopener noreferrer"><img
-                        src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png"
+                        src="https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png"
                         alt="logo de whatsapp"></a>
             </div>
         </div>
     </footer>
 
+    <script src="../js/utils.js"></script>
 </body>
 
 </html>

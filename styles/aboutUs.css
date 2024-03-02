@@ -1,7 +1,11 @@
 main {
+    text-align: justify;
+    color: var(--color-text2);
+}
+.aboutUsSection {
+    width: 90%;
     max-width: 1140px;
     margin: auto;
-    text-align: justify;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -9,19 +13,51 @@ main {
     font-size: 3rem;
     margin-bottom: 35px;
 }
-.sectionSubTitle:not(:last-child) {
+.sectionSubTitle {
     font-size: 1.4rem;
+}
+.sectionSubTitle:not(:last-child) {
     margin-bottom: 35px;
 }
 .aboutUsSectionSeparation {
     width: 2px;
     height: 120px;
-    background-color: var(--color-text);
+    background-color: var(--color-text2);
 }
 .subTitleContainer {
     width: 30%;
 }
+.subTitleContainer img {
+    width: 80%;
+    margin-left: 10%;
+    border-top: 1px solid var(--color-text2);
+    border-bottom: 1px solid var(--color-text2);
+}
 .textContainer {
     width: 60%;
     line-height: 1.7rem;
+}
+.textContainer img {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    border: 1px solid var(--color-text2);
+}
+.clientSection {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+}
+.clientContainer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: auto;
+    width: 90%;
+    max-width: 1140px;
+}
+.clientImgContainer {
+    flex-wrap: wrap;
+}
+.clientImgContainer img {
+    width: 250px;
+    height: 250px;
 }
