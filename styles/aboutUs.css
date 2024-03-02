@@ -9,8 +9,10 @@ main {
     font-size: 3rem;
     margin-bottom: 35px;
 }
-.sectionSubTitle:not(:last-child) {
+.sectionSubTitle {
     font-size: 1.4rem;
+}
+.sectionSubTitle:not(:last-child) {
     margin-bottom: 35px;
 }
 .aboutUsSectionSeparation {
@@ -21,7 +23,19 @@ main {
 .subTitleContainer {
     width: 30%;
 }
+.subTitleContainer img {
+    width: 80%;
+    margin-left: 10%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
 .textContainer {
     width: 60%;
     line-height: 1.7rem;
+}
+.textContainer img {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    border: 1px solid #fff;;
 }
