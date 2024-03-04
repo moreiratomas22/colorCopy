@@ -43,21 +43,3 @@ main {
     margin-bottom: 30px;
     border: 1px solid var(--color-text2);
 }
-.clientSection {
-    background-color: var(--color-secondary);
-    color: var(--color-text);
-}
-.clientContainer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin: auto;
-    width: 90%;
-    max-width: 1140px;
-}
-.clientImgContainer {
-    flex-wrap: wrap;
-}
-.clientImgContainer img {
-    width: 250px;
-    height: 250px;
-}

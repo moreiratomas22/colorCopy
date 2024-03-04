@@ -9,6 +9,7 @@
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="../assets/colorC-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/clients.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -20,11 +21,11 @@
         <nav class="navContainer flex justify-sb align-c">
             <a href="/"><img class="logo" src="../assets/colorC-logo.png" alt="ColorCopy logo"></a>
             <ul class="navLinks gap-20 flex justify-sb align-c">
-                <li><a href="./wwdo.html">Qué hacemos</a></li>
-                <li><a href="./aboutUs.html">Acerca de nosotros</a></li>
-                <li><a href="./store.html">Store</a></li>
-                <li><a href="./clients.html">Clientes</a></li>
-                <li><a href="./contact.html">Contacto</a></li>
+                <li class="navLink"><a href="./wwdo.html">Qué hacemos</a></li>
+                <li class="navLink"><a href="./aboutUs.html">Acerca de nosotros</a></li>
+                <li class="navLink"><a href="./store.html">Store</a></li>
+                <li class="active">Clientes</li>
+                <li class="navLink"><a href="./contact.html">Contacto</a></li>
             </ul>
             <button class="hamburgerMenu">
                 <div class="line"></div>
@@ -39,7 +40,23 @@
         </div>
     </header>
 
-    <footer id="footer">
+    <main>
+        <section class="bg-clientContainer">
+            <div class="clientContainer">
+                <h2 class="sectionTitle">Nuestros Clientes</h2>
+                <div class="clientImgContainer flex justify-c align-c">
+                    <img src="https://colorcopy.com.ar/wp-content/uploads/2022/12/AG-logo1.png" alt="">
+                    <img src="https://colorcopy.com.ar/wp-content/uploads/2022/12/Ag-logo3.png" alt="">
+                    <img src="https://colorcopy.com.ar/wp-content/uploads/2022/12/Ag-logo4.png" alt="">
+                    <img src="https://colorcopy.com.ar/wp-content/uploads/2022/12/AG-logo.png" alt="">
+                    <img src="https://colorcopy.com.ar/wp-content/uploads/2022/12/AG-logo2.png" alt="">
+                    <img src="https://colorcopy.com.ar/wp-content/uploads/2022/12/Ag-logo5.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-blue-red">
         <div class="footerContainer flex justify-sb">
             <div>
                 <h4>Información</h4>
@@ -53,8 +70,9 @@
                             alt="Logo de ubicacion"></a>
                 </div>
                 <div class="flex gap-20">
-                    <a href="https://www.instagram.com/colorcopyag/?hl=es-la" target="_blank" rel="noopener noreferrer"><img
-                            class="tinyLogo" src="../assets/instagram.png" alt="logo de instagram"></a>
+                    <a href="https://www.instagram.com/colorcopyag/?hl=es-la" target="_blank"
+                        rel="noopener noreferrer"><img class="tinyLogo" src="../assets/instagram.png"
+                            alt="logo de instagram"></a>
                     <a href="https://www.facebook.com/colorcopyag/?locale=es_LA" target="_blank"
                         rel="noopener noreferrer"><img class="tinyLogo" src="../assets/facebook.png"
                             alt="logo de Facebook"></a>
@@ -90,9 +108,9 @@
             </div>
             <div id="wt-logo" class="flex flexdirection-c gap-10">
                 <button id="toTheTop" class="fadeOut">
-                    <div class="toTheTop-line1"></div>
-                    <div class="toTheTop-line2"></div>
-                    <div class="toTheTop-line3"></div>
+                    <div class="toTheTop-line toTheTop-line1"></div>
+                    <div class="toTheTop-line toTheTop-line2"></div>
+                    <div class="toTheTop-line toTheTop-line3"></div>
                 </button>
                 <a href="https://wa.me/+5493547459665" target="_blank" rel="noopener noreferrer"><img
                         src="https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png"
