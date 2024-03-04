@@ -1,17 +1,22 @@
 .wwdoContainer {
-    width: 90%;
-    max-width: 1140px;
-    margin: auto;
     color: var(--color-text);
 }
 
 .wwdoSection {
-    margin: 30px auto;
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+    padding: 40px 0;
 }
 
 .sectionTitle {
     font-size: 2rem;
     margin-bottom: 20px;
+}
+.whiteColor {
+    color: var(--color-text);
+}
+.blackColor {
     color: var(--color-text2);
 }
 
@@ -83,6 +88,14 @@
     content: "\2713";
     left: 0;
     top: -2px;
+}
+
+.ourWorks {
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+    color: var(--color-text);
+    padding-top: 20px;
 }
 
 .proyectContainer {
