@@ -131,11 +131,12 @@
 }
 
 @media (width < 759px) {
-    .cardContainer {
+    .cardContainer:nth-child(n) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
+        border-radius: 1rem;
     }
 
     .publicidad-textContainer {
