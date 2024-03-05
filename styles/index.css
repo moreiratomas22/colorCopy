@@ -322,12 +322,12 @@ a {
 }
 
 .table-hiddenContent::-webkit-scrollbar-thumb {
-    background-color: var(--color-tertiary); /* Color del scrollbar */
-    border-radius: 6px; /* Borde redondeado del scrollbar */
+    background-color: var(--color-tertiary);
+    border-radius: 6px;
 }
 
 .table-hiddenContent::-webkit-scrollbar-track  {
-    background-color: var(--color-primary); /* Color de fondo del scrollbar */
+    background-color: var(--color-primary);
     border-radius: 6px;
 }
 
@@ -372,6 +372,12 @@ a {
 
     .table-title {
         margin-bottom: 12px;
+    }
+    .table-hiddenContent {
+        height: 67%;
+    }
+    .table-shownContent {
+        transform: translateY(-164%);
     }
 }
 
@@ -504,6 +510,7 @@ th {
     position: fixed;
     bottom: 30px;
     right: 30px;
+    z-index: 9;
 }
 
 .tinyLogo {
