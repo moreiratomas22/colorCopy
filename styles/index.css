@@ -214,7 +214,8 @@ a {
         "description"
         "button"
     ;
-    padding: 50px 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 0;
     position: relative;
     overflow: hidden;
@@ -306,7 +307,7 @@ a {
 
 .table-hiddenContent {
     width: 100%;
-    height: 70%;
+    height: 77%;
     position: absolute;
     bottom: -100%;
     z-index: 3;
@@ -326,13 +327,13 @@ a {
     border-radius: 6px;
 }
 
-.table-hiddenContent::-webkit-scrollbar-track  {
+.table-hiddenContent::-webkit-scrollbar-track {
     background-color: var(--color-primary);
     border-radius: 6px;
 }
 
 .table-shownContent {
-    transform: translateY(-162%);
+    transform: translateY(-148%);
 }
 
 @media (min-width:833px) and (max-width:940px) {
@@ -373,12 +374,27 @@ a {
     .table-title {
         margin-bottom: 12px;
     }
+}
+
+@media (500px < width < 832px) {
     .table-hiddenContent {
-        height: 67%;
+        height: 75%;
     }
+
     .table-shownContent {
-        transform: translateY(-164%);
+        transform: translateY(-151%);
     }
+}
+
+@media (0 < width < 778px) {
+    .table-hiddenContent {
+        height: 75%;
+    }
+
+    .table-shownContent {
+        transform: translateY(-150%);
+    }
+
 }
 
 .changeColorSection {
