@@ -252,6 +252,10 @@ a {
     border-bottom: 1px solid var(--color-tertiary);
     z-index: 4;
 }
+.table-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
 .table-subtitle {
     grid-area: subtitle;
@@ -302,6 +306,8 @@ a {
     width: fit-content;
     height: fit-content;
     padding: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .table-button:hover {
@@ -334,6 +340,10 @@ a {
     padding-right: 5px;
     padding-left: 5px;
     overflow-y: scroll;
+}
+.table-hiddenContent p {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .table-hiddenContent::-webkit-scrollbar {
