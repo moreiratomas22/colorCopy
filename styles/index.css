@@ -328,8 +328,9 @@ a {
     z-index: 3;
     transition: 0.2s ease-in-out;
     background-color: var(--color-secondary);
-    background-color: red;
     box-sizing: border-box;
+    padding-right: 5px;
+    padding-left: 5px;
     overflow-y: scroll;
 }
 
