@@ -248,8 +248,6 @@ a {
     border-bottom: 1px solid var(--color-tertiary);
     z-index: 4;
 }
-.table-title {
-}
 
 .table-subtitle {
     grid-area: subtitle;
