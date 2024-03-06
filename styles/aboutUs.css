@@ -2,6 +2,7 @@ main {
     text-align: justify;
     color: var(--color-text2);
 }
+
 .aboutUsSection {
     width: 90%;
     max-width: 1140px;
@@ -9,39 +10,97 @@ main {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
 .sectionTitle {
     font-size: 3rem;
     margin-bottom: 35px;
 }
+
 .sectionSubTitle {
     font-size: 1.4rem;
 }
+
 .sectionSubTitle:not(:last-child) {
     margin-bottom: 35px;
 }
+
 .aboutUsSectionSeparation {
     width: 2px;
     height: 120px;
     background-color: var(--color-text2);
 }
+
 .subTitleContainer {
     width: 30%;
 }
+
 .subTitleContainer img {
     width: 80%;
-    margin-left: 10%;
     border-top: 1px solid var(--color-text2);
     border-bottom: 1px solid var(--color-text2);
     border-radius: 0.6rem;
 }
+
 .textContainer {
     width: 60%;
     line-height: 1.7rem;
 }
+
 .textContainer img {
     width: 80%;
-    margin-left: 10%;
-    margin-bottom: 30px;
     border: 1px solid var(--color-text2);
     border-radius: 0.6rem;
+}
+
+@media ( 535px < width < 768px ) {
+    .aboutUsContent {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .subTitleContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .subTitleContainer img {
+        width: 40%;
+    }
+    .textContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .aboutUsSectionSeparation {
+        display: none;
+    }
+}
+@media ( 0 < width < 536px ) {
+    .aboutUsContent {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .subTitleContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .subTitleContainer img {
+        width: 60%;
+        text-align: center;
+    }
+    .textContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .textContainer img {
+        width: 90%;
+    }
+    .aboutUsSectionSeparation {
+        display: none;
+    }
 }
