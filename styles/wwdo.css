@@ -130,6 +130,29 @@
     height: 100%;
 }
 
+.goToClientsButtonContainer {
+    text-align: center;
+}
+.goToClientsButton {
+    margin: 20px;
+    display: inline-block;
+}
+
+.goToClientsButton button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--color-text);
+    color: var(--color-text);
+    transition: 0.2s ease-in-out;
+    font-size: 1.1rem;
+}
+
+.goToClientsButton button:hover {
+    color: var(--color-quinary);
+    border-bottom: 1px solid var(--color-quinary);
+}
+
 @media (width < 759px) {
     .cardContainer:nth-child(n) {
         flex-direction: column;
