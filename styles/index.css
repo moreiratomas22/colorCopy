@@ -409,6 +409,14 @@ a {
     padding-bottom: 40px;
 }
 
+.changeColorSection-invert {
+    background: var(--color-secondary);
+    background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-primary) 11%);
+    padding-top: 117px;
+    padding-bottom: 40px;
+    color: var(--color-text2);
+}
+
 .articulos {
     width: 90%;
     max-width: 1140px;

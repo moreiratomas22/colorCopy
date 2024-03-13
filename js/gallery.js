@@ -53,7 +53,7 @@ function adjustImagePositions() {
     const columns = Math.floor(windowWidth / width) || 1
     const whiteSpace = windowWidth - columns * width  //espacio desperdiciado
 
-    const topColumn = Array.from({ length: columns }, () => 0) //Inicializo las columnas en 0, para luego ir sumando por columna
+    const topColumn = Array.from({ length: columns }, () => 30) //Inicializo las columnas en 30px, para luego ir sumando por columna
     const leftColumn = Array.from({ length: columns }, (_, column) => ((column * width) + (whiteSpace / 2) + column * gap)) //Calculo el inicio de cada columna
 
     let column = 0 //desde 0 hasta columns - 1
@@ -76,6 +76,7 @@ function adjustImagePositions() {
     });
     const maxCol = arrayMaxElementPosition(topColumn)
     gallery.style.height = `${topColumn[maxCol]}px`
+    gallery.style.visibility = "visible"
 }
 
 const openCarrousel = (index) => {
