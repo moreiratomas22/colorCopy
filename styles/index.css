@@ -101,8 +101,10 @@ a {
 .active {
     color: var(--color-quinary);
 }
-
-.logo {
+.logoContainer {
+    flex-wrap: wrap;
+}
+.logoContainer img {
     width: 150px;
     cursor: pointer;
     z-index: 4;
@@ -127,9 +129,8 @@ a {
 
 @media (max-width:1110px) {
     .navLinks {
-        transform: translateY(-150%);
         position: absolute;
-        top: 0;
+        top: -100%;
         right: 0;
         background-color: var(--color-secondary);
         transition: 0.2s ease-in-out;
@@ -139,7 +140,7 @@ a {
     }
 
     .navLinksShown {
-        transform: translateY(50%);
+        top: 90px
     }
 
     .hamburgerMenu {
