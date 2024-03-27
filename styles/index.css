@@ -6,13 +6,6 @@
     --color-quinary: #F26C4F;
     --color-text: #fff;
     --color-text2: #131313;
-
-    /*     --color-primary: #1c2735;
-    --color-secondary: #18202c;
-    --color-tertiary: #ffffff1a;
-    --color-text: #fff;
-    --color-text2: #131313; */
-
     scroll-behavior: smooth;
 }
 
@@ -64,6 +57,10 @@ a {
     gap: 10px;
 }
 
+.textColor2 {
+    color: var(--color-text2);
+}
+
 #header {
     height: 100vh;
     min-height: 740px;
@@ -71,6 +68,7 @@ a {
     background-image: url("../assets/portada.jpg");
     background-size: cover;
     color: var(--color-text);
+    overflow: hidden;
 }
 
 .hamburgerMenu {
@@ -101,9 +99,11 @@ a {
 .active {
     color: var(--color-quinary);
 }
+
 .logoContainer {
     flex-wrap: wrap;
 }
+
 .logoContainer img {
     width: 150px;
     cursor: pointer;
@@ -114,17 +114,47 @@ a {
     margin-bottom: 0;
     line-height: 0.7;
     font-size: 4rem;
+    z-index: 5;
 }
 
 .subTitle {
     margin-top: 15px;
     font-size: 1.5rem;
     font-weight: normal;
+    z-index: 5;
 }
 
 .portada {
     height: 100%;
     animation: fadeIn 2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+#carousel {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 60px;
+    position: absolute;
+}
+
+#carousel .imageContainer {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#carousel .imageContainer:first-of-type {
+    display: flex;
+}
+
+#carousel .imageContainer img {
+    width: 100%;
+    object-fit: cover;
+    filter: blur(4px) brightness(0.3);
 }
 
 @media (max-width:1110px) {
@@ -204,6 +234,7 @@ a {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 .servicios-card {
     width: 33.3%;
     height: auto;
@@ -223,6 +254,7 @@ a {
     justify-content: center;
     overflow: hidden;
 }
+
 .servicioContainer {
     grid-area: content;
     width: 100%;
@@ -247,12 +279,14 @@ a {
 .servicios-card:last-of-type {
     border-radius: 0 45px 45px 0;
 }
+
 .table-titleContainer {
     grid-area: title;
     height: 100%;
     border-bottom: 1px solid var(--color-tertiary);
     z-index: 4;
 }
+
 .table-title {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -343,6 +377,7 @@ a {
     padding-left: 5px;
     overflow-y: scroll;
 }
+
 .table-hiddenContent p {
     margin-top: 30px;
     margin-bottom: 30px;
