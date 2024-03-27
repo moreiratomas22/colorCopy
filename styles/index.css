@@ -133,9 +133,8 @@ a {
 
 #carousel {
     width: 100%;
-    height: 40%;
-    overflow: hidden;/* 
-    margin-top: 60px; */
+    height: 60%;
+    overflow: hidden;
     position: absolute;
 }
 
@@ -223,6 +222,12 @@ a {
 
     .subTitle {
         font-size: 1.1rem;
+    }
+}
+@media (width < 400px) {
+    .navLinksShown {
+        top: 198px;
+        z-index: 20;
     }
 }
 
