@@ -1,6 +1,6 @@
 const carousel = document.getElementById('carousel');
 const images = document.querySelectorAll('.imageContainer');
-const intervalTime = 3000;
+const intervalTime = 4000;
 
 let imageIndex = 0;
 const imagesLength = images.length
