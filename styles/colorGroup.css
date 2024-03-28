@@ -1,0 +1,58 @@
+#synoptic-table {
+    background-color: var(--color-primary);
+    position: relative;
+    width: 90%;
+    max-width: 1140px;
+    height: 800px;
+    margin: auto;
+}
+
+.synoptic-item {
+    border-radius: 40px;
+    border: 1px solid var(--color-tertiary);
+    position: absolute;
+    width: 13.75rem
+}
+.synoptic-title {
+    background-color: red;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.synoptic-lvl-1 {
+    background-color: blue;
+}
+.synoptic-item-1 {
+    top: 30%;
+    left: 0;
+}
+.synoptic-item-2 {
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.synoptic-item-3 {
+    top: 30%;
+    right: 0;
+}
+
+.synoptic-lvl-2 {
+    background-color: green;
+}
+.synoptic-item-4 {
+    top: 60%;
+    left: 10%;
+}
+.synoptic-item-5 {
+    top: 70%;
+    left: 30%;
+}
+.synoptic-item-6 {
+    top: 70%;
+    right: 30%;
+}
+.synoptic-item-7 {
+    top: 60%;
+    right: 10%;
+}
