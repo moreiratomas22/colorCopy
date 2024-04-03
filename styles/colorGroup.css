@@ -1,9 +1,15 @@
+main {
+    max-width: 1140px;
+    overflow-x: scroll;
+    margin: auto;
+    margin-top: 30px;
+}
+
 #synoptic-table {
     background-color: var(--color-primary);
     position: relative;
     width: 1140px;
     height: 800px;
-    margin: auto;
 }
 
 .synoptic-item {
@@ -24,7 +30,7 @@
 }
 
 .synoptic-title {
-    background-color: red;
+    background-color: var(--color-quinary);
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -32,7 +38,7 @@
 }
 
 .synoptic-lvl-1 {
-    background-color: blue;
+    background-color: var(--color-tertiary);
     z-index: 2;
 }
 .synoptic-lvl-1::before {
@@ -72,7 +78,7 @@
 }
 
 .synoptic-lvl-2 {
-    background-color: green;
+    background-color: var(--color-quaternary);
     z-index: 1;
 }
 .synoptic-lvl-2::before {
