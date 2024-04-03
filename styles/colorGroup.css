@@ -1,58 +1,120 @@
 #synoptic-table {
     background-color: var(--color-primary);
     position: relative;
-    width: 90%;
-    max-width: 1140px;
+    width: 1140px;
     height: 800px;
     margin: auto;
 }
 
 .synoptic-item {
     border-radius: 40px;
-    border: 1px solid var(--color-tertiary);
     position: absolute;
-    width: 13.75rem
+    width: 13.75rem;
+    z-index: 2;
 }
+
+.synoptic-item::before {
+    content: "";
+    background-color: var(--color-text2);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: bottom left;
+    z-index: -1;
+}
+
 .synoptic-title {
     background-color: red;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 3;
 }
 
 .synoptic-lvl-1 {
     background-color: blue;
+    z-index: 2;
 }
+.synoptic-lvl-1::before {
+    height: 2px;
+}
+
 .synoptic-item-1 {
     top: 30%;
     left: 0;
+    z-index: 1;
 }
+
+.synoptic-item-1::before {
+    transform: rotateZ(-22deg);
+    width: 23.75rem;
+}
+
 .synoptic-item-2 {
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
 }
+
+.synoptic-item-2::before {
+    transform: rotateZ(-90deg);
+    width: 11.5rem;
+}
+
 .synoptic-item-3 {
     top: 30%;
     right: 0;
 }
 
+.synoptic-item-3::before {
+    transform: rotateZ(202deg);
+    width: 23.75rem;
+}
+
 .synoptic-lvl-2 {
     background-color: green;
+    z-index: 1;
 }
+.synoptic-lvl-2::before {
+    height: 1px;
+}
+
 .synoptic-item-4 {
     top: 60%;
     left: 10%;
 }
+
+.synoptic-item-4::before {
+    transform: rotateZ(-54deg);
+    width: 27rem;
+}
+
 .synoptic-item-5 {
     top: 70%;
     left: 30%;
 }
+
+.synoptic-item-5::before {
+    transform: rotateZ(-81deg);
+    width: 27rem;
+}
+
 .synoptic-item-6 {
     top: 70%;
     right: 30%;
 }
+
+.synoptic-item-6::before {
+    transform: rotateZ(-99deg);
+    width: 27rem;
+}
+
 .synoptic-item-7 {
     top: 60%;
     right: 10%;
+}
+
+.synoptic-item-7::before {
+    transform: rotateZ(-125deg);
+    width: 27rem;
 }
