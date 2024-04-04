@@ -1,0 +1,7 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^contacto$ /pages/contact.html [L]
+RewriteRule ^que-hacemos$ /pages/wwdo.html [L]
+RewriteRule ^sobre-nosotros /pages/aboutUs.html [L]
+RewriteRule ^clientes$ /pages/clients.html [L]
+RewriteRule ^colorgroup$ /pages/colorGroup.html [L]
