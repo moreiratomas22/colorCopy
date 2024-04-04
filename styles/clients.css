@@ -3,12 +3,11 @@
     max-width: 1140px;
     margin: auto;
 }
-.bg-clientContainer {
+/* .bg-clientContainer {
     background-color: var(--color-secondary);
-}
+} */
 .clientSection {
     background-color: var(--color-secondary);
-    color: var(--color-text);
 }
 .clientContainer {
     padding-top: 2rem;
@@ -25,8 +24,10 @@
 .clientImgContainer img {
     width: 200px;
     height: 200px;
+    object-fit: contain;
 }
 .sectionTitle{
+    margin-top: 30px;
     font-size: 2rem;
 }
 
@@ -37,6 +38,11 @@
     margin: auto;
     position: relative;
     visibility: hidden;
+}
+
+.gallerySection h2{
+    color: var(--color-text);
+    margin-top: 10px;
 }
 
 #gallery div {
