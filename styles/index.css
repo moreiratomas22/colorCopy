@@ -131,31 +131,6 @@ a {
     overflow: hidden;
 }
 
-#carousel {
-    width: 100%;
-    height: 60%;
-    overflow: hidden;
-    position: absolute;
-}
-
-#carousel .imageContainer {
-    width: 100%;
-    height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-#carousel .imageContainer:first-of-type {
-    display: flex;
-}
-
-#carousel .imageContainer img {
-    width: 100%;
-    object-fit: cover;
-    filter: blur(4px) brightness(0.3);
-}
-
 @media (max-width:1110px) {
     .navLinks {
         position: absolute;
@@ -169,7 +144,8 @@ a {
     }
 
     .navLinksShown {
-        top: 90px
+        top: 90px;
+        z-index: 20;
     }
 
     .hamburgerMenu {
