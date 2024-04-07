@@ -648,7 +648,7 @@ main {
         content: "";
         background-color: var(--color-primary);
         width: 3px;
-        height: 549%;
+        height: 900px;
         left: 4%;
         top: 93%;
     }
