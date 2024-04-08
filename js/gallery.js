@@ -2,15 +2,10 @@ window.addEventListener('resize', () => {
     adjustImagePositions();
 });
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
     adjustImagePositions();
 });
-window.onclick = function(event) {
-    const modal = document.getElementById('galleryModal');
-    if (event.target === modal) {
-        closeGallery();
-    }
-};
+
 
 document.getElementById("prevImgButton").addEventListener("click", () => prevImage(currentImageIndex))
 document.getElementById("nextImgButton").addEventListener("click", () => nextImage(currentImageIndex))
@@ -47,25 +42,26 @@ function adjustImagePositions() {
     const gallery = document.querySelector('#gallery');
     const images = gallery.querySelectorAll('.imageContainer');
     const gap = 5
-
+    
     const windowWidth = gallery.offsetWidth
     const width = 280 //Todas las columnas son iguales y las imagenes tienen el ancho de la columna
     const columns = Math.floor(windowWidth / width) || 1
     const whiteSpace = windowWidth - columns * width  //espacio desperdiciado
-
+    
     const topColumn = Array.from({ length: columns }, () => 30) //Inicializo las columnas en 30px, para luego ir sumando por columna
     const leftColumn = Array.from({ length: columns }, (_, column) => ((column * width) + (whiteSpace / 2) + column * gap)) //Calculo el inicio de cada columna
-
+    
     let column = 0 //desde 0 hasta columns - 1
-
+    
     images.forEach((img, index) => {
         img.style.width = `${width}px`
         img.style.height = `${img.children[0].offsetHeight}px`
         const left = leftColumn[column]
         const top = topColumn[column]
-
+        img.style.visibility = "visible"
+        
         topColumn[column] += img.children[0].offsetHeight + gap
-
+        
         //Ahora tengo que elegir cúal va a ser la siguiente columna donde se ponga la img
         column = arrayMinElementPosition(topColumn)
 
@@ -76,7 +72,12 @@ function adjustImagePositions() {
     });
     const maxCol = arrayMaxElementPosition(topColumn)
     gallery.style.height = `${topColumn[maxCol]}px`
-    gallery.style.visibility = "visible"
+    window.onclick = function(event) {
+        const modal = document.getElementById('galleryModal');
+        if (event.target === modal) {
+            closeGallery();
+        }
+    };
 }
 
 const openCarrousel = (index) => {

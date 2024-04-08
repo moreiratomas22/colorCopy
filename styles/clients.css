@@ -3,9 +3,7 @@
     max-width: 1140px;
     margin: auto;
 }
-/* .bg-clientContainer {
-    background-color: var(--color-secondary);
-} */
+
 .clientSection {
     background-color: var(--color-secondary);
 }
@@ -37,7 +35,6 @@
     min-height: 100vh;
     margin: auto;
     position: relative;
-    visibility: hidden;
 }
 
 .gallerySection h2{
@@ -55,6 +52,7 @@
     object-fit: cover;
     width: 100%;
     transition: 0.5s ease-in-out;
+    visibility: hidden;
 }
 
 #gallery img:hover {
