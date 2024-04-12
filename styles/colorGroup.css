@@ -251,6 +251,7 @@ a {
     position: relative;
     overflow: hidden;
     line-height: 1.6rem;
+    margin-bottom: 25px;
 }
 
 .servicios-card:first-of-type {
