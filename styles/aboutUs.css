@@ -170,7 +170,7 @@ main {
     height: 1px;
 }
 
-@media (width > 1075px) {
+@media (width > 1145px) {
     .synoptic-title {
         background-color: var(--color-quinary);
         top: 0;
@@ -216,15 +216,16 @@ main {
     .synoptic-item-4 {
         top: 55%;
         left: 10%;
+        z-index: 2;
     }
     
     .synoptic-item-5 {
-        top: 71%;
+        top: 73%;
         left: 21%;
     }
     
     .synoptic-item-6 {
-        top: 71%;
+        top: 73%;
         right: 21%;
     }
     
@@ -254,12 +255,12 @@ main {
 
     .synoptic-item-5::before {
         transform: rotateZ(-69deg);
-        width: 27rem;
+        width: 30rem;
     }
 
     .synoptic-item-6::before {
         transform: rotateZ(-111deg);
-        width: 27rem;
+        width: 30rem;
     }
 
     .synoptic-item-7::before {
@@ -268,7 +269,7 @@ main {
     }
 }
 
-@media (1000px <=width <=1075px) {
+@media (1000px <=width <=1145px) {
     .synoptic-title {
         background-color: var(--color-quinary);
         top: 0;
@@ -317,12 +318,12 @@ main {
     }
     
     .synoptic-item-5 {
-        top: 71%;
+        top: 73%;
         left: 21%;
     }
     
     .synoptic-item-6 {
-        top: 71%;
+        top: 73%;
         right: 21%;
     }
     
@@ -332,7 +333,7 @@ main {
     }
     .synoptic-item-1::before {
         transform: rotateZ(-34deg);
-        width: 18rem;
+        width: 22rem;
     }
 
     .synoptic-item-2::before {
@@ -342,7 +343,7 @@ main {
 
     .synoptic-item-3::before {
         transform: rotateZ(214deg);
-        width: 18rem;
+        width: 22rem;
     }
 
     .synoptic-item-4 {
@@ -350,18 +351,18 @@ main {
     }
 
     .synoptic-item-4::before {
-        transform: rotateZ(-63deg);
+        transform: rotateZ(-59deg);
         width: 22rem;
     }
 
     .synoptic-item-5::before {
-        transform: rotateZ(283deg);
-        width: 26rem;
+        transform: rotateZ(-76deg);
+        width: 30rem;
     }
 
     .synoptic-item-6::before {
-        transform: rotateZ(257deg);
-        width: 26rem;
+        transform: rotateZ(-104deg);
+        width: 30rem;
     }
 
     .synoptic-item-7::before {
@@ -648,7 +649,7 @@ main {
         content: "";
         background-color: var(--color-primary);
         width: 3px;
-        height: 900px;
+        height:  61.25rem;
         left: 4%;
         top: 93%;
     }
