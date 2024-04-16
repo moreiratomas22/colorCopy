@@ -1,23 +1,12 @@
-window.addEventListener('resize', () => {
-    adjustImagePositions();
-});
-
-window.addEventListener('load', () => {
-    adjustImagePositions();
-});
-window.onclick = function(event) {
-    const modal = document.getElementById('galleryModal');
-    if (event.target === modal) {
-        closeGallery();
-    }
-};
-
 document.getElementById("prevImgButton").addEventListener("click", () => prevImage(currentImageIndex))
 document.getElementById("nextImgButton").addEventListener("click", () => nextImage(currentImageIndex))
 document.getElementById("closeImgButton").addEventListener("click", () => closeGallery())
+const gallery = document.querySelector('#gallery');
+const imageContainers = gallery.querySelectorAll('.imageContainer');
 
 let imageArray = []
 let currentImageIndex = 0
+const totalImages = imageContainers.length
 
 const arrayMinElementPosition = (array) => {
     let min = array[0]
@@ -43,11 +32,8 @@ const arrayMaxElementPosition = (array) => {
     return index
 }
 
-function adjustImagePositions() {
-    const gallery = document.querySelector('#gallery');
-    const images = gallery.querySelectorAll('.imageContainer');
+async function adjustImagePositions() {
     const gap = 5
-
     const windowWidth = gallery.offsetWidth
     const width = 280 //Todas las columnas son iguales y las imagenes tienen el ancho de la columna
     const columns = Math.floor(windowWidth / width) || 1
@@ -58,48 +44,94 @@ function adjustImagePositions() {
 
     let column = 0 //desde 0 hasta columns - 1
 
-    images.forEach((img, index) => {
-        img.style.width = `${width}px`
-        img.style.height = `${img.children[0].offsetHeight}px`
+    for (let i = 0; i < totalImages; i++) {
+        imageContainers[i].firstElementChild.style.left = "0"
+        imageContainers[i].firstElementChild.style.position = "relative"
+        imageContainers[i].style.width = `${width}px`
+
+        const imageHeight = await loadImage(imageContainers[i].firstElementChild)
+        imageContainers[i].style.height = `${imageHeight}px`
+
         const left = leftColumn[column]
         const top = topColumn[column]
+        topColumn[column] += imageContainers[i].children[0].height + gap
 
-        topColumn[column] += img.children[0].offsetHeight + gap
-
-        //Ahora tengo que elegir cúal va a ser la siguiente columna donde se ponga la img
+        //Ahora tengo que elegir cúal va a ser la siguiente columna donde se ponga la imageContainers[i]
         column = arrayMinElementPosition(topColumn)
 
-        img.style.left = `${left}px`;
-        img.style.top = `${top}px`;
-        img.addEventListener("click", () => openCarrousel(index))
-        imageArray.push(img)
-    });
+        imageContainers[i].style.left = `${left}px`;
+        imageContainers[i].style.top = `${top}px`;
+        imageContainers[i].addEventListener("click", () => openCarrousel(i))
+        imageArray.push(imageContainers[i].children[0])
+        const classesToAdd = ["wow", "animate__animated", "animate__fadeInUp"]
+        imageContainers[i].classList.add(...classesToAdd)
+    }
     const maxCol = arrayMaxElementPosition(topColumn)
     gallery.style.height = `${topColumn[maxCol]}px`
-    gallery.style.visibility = "visible"
+    window.onclick = function (event) {
+        const modal = document.getElementById('galleryModal');
+        if (event.target === modal) {
+            closeGallery();
+        }
+    };
 }
 
 const openCarrousel = (index) => {
     const carrousel = document.getElementById("galleryModal")
-    const currentImage = document.getElementById("modalImage")
     currentImageIndex = index
     carrousel.style.display = "block"
-    currentImage.src = imageArray[index].children[0].src
+    const clonedImage = imageArray[index].cloneNode(true)
+    clonedImage.style.left = ""
+    clonedImage.style.display = ""
+    carrousel.appendChild(clonedImage).classList.add("modal-content")
     document.body.style.overflow = "hidden" //Bloqueo el scroll
 }
 const closeGallery = () => {
+    const carrousel = document.getElementById("galleryModal")
     document.getElementById('galleryModal').style.display = 'none';
     document.body.style.overflow = "visible" //desbloqueo el scroll
+    carrousel.removeChild(carrousel.children[3])
 }
 
 const prevImage = (index) => {
+    const carrousel = document.getElementById("galleryModal")
     currentImageIndex = index - 1
     if (currentImageIndex === 0) currentImageIndex = imageArray.length - 1
-    document.getElementById('modalImage').src = imageArray[currentImageIndex].children[0].src;
+    carrousel.removeChild(carrousel.children[3])
+    const clonedImage = imageArray[currentImageIndex].cloneNode(true)
+    clonedImage.style.left = ""
+    clonedImage.style.display = ""
+    carrousel.appendChild(clonedImage).classList.add("modal-content")
 }
 
 const nextImage = (index) => {
+    const carrousel = document.getElementById("galleryModal")
     currentImageIndex = index + 1
     if (currentImageIndex === imageArray.length) currentImageIndex = 0
-    document.getElementById('modalImage').src = imageArray[currentImageIndex].children[0].src;
+    carrousel.removeChild(carrousel.children[3])
+    const clonedImage = imageArray[currentImageIndex].cloneNode(true)
+    clonedImage.style.left = ""
+    clonedImage.style.display = ""
+    carrousel.appendChild(clonedImage).classList.add("modal-content")
+}
+
+window.addEventListener("load", () => {
+    adjustImagePositions();
+    const spinner = document.getElementById("loader")
+    spinner.style.display = "none"
+    window.addEventListener('resize', () => {
+        adjustImagePositions();
+    });
+})
+
+const loadImage = (image) => {
+    return new Promise((res, rej) => {
+        if (image.complete) {
+            res(image.height)
+        } else {
+            image.onload = () => {
+                res(image.height)
+            }
+        }
+    })
 }

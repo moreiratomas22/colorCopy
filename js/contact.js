@@ -20,7 +20,7 @@ const sendEmail = (e) => {
             subject: "Consulta desde la web",
             message: message.value
         };
-        emailjs.send('service_kim9dpt', 'template_gc8npis', templateParams)
+        emailjs.send('service_7rsos86', 'template_5twkh98', templateParams)
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 Swal.fire(

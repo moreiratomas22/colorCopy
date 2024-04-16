@@ -21,7 +21,7 @@
     <header id="header">
         <nav class="navContainer flex justify-sb align-c">
             <div class="logoContainer flex justify-c align-c gap-30">
-                <a href="/colorgroup"><img src="./assets/colorGroup_logo.png" alt="Logo de ColorGroup"></a>
+                <a href="/colorgroup"><img src="../assets/colorGroup_logo.png" alt="Logo de ColorGroup"></a>
                 <img src="../assets/colorStore_logo.png" alt="ColorCopy logo">
             </div>
             <ul class="navLinks gap-20 flex justify-sb align-c">
@@ -45,64 +45,65 @@
     </header>
 
     <main>
-        <section class="bg-clientContainer">
-            <div class="clientContainer">
-                <h2 class="sectionTitle">Nuestros Clientes</h2>
-                <div class="clientImgContainer flex justify-c align-c">
-                    <img src="../assets/clients/cliente_1.png" alt="CVS Health">
-                    <img src="../assets/clients/cliente_2.png" alt="Exxon">
-                    <img src="../assets/clients/cliente_3.png" alt="Berkshire Hathaway HomeServices">
-                    <img src="../assets/clients/cliente_4.png" alt="at&t">
-                    <img src="../assets/clients/cliente_5.png" alt="Oracle">
-                    <img src="../assets/clients/cliente_6.png" alt="wordpress.com">
-                </div>
+        <section class="clientContainer">
+            <h2 class="sectionTitle textColor2">Nuestros Clientes</h2>
+            <div class="clientImgContainer flex justify-c align-c gap-30">
+                <img src="../assets/clients/cliente_1.png" alt="Altaviacion">
+                <img src="../assets/clients/cliente_2.png" alt="Universidad Catoloca de Cordoba">
+                <img src="../assets/clients/cliente_3.png" alt="Gobierno de la ciudad de Alta Gravcia">
+                <img src="../assets/clients/cliente_4.png" alt="Laporta">
+                <img src="../assets/clients/cliente_5.png" alt="NaranjaX">
+                <img src="../assets/clients/cliente_6.png" alt="El Potrerillo de Larreta">
+                <img src="../assets/clients/cliente_7.png" alt="Seabury Solutions">
             </div>
         </section>
-        <section id="gallerySection" class="changeColorSection-invert">
+        <section id="gallerySection" class="changeColorSection">
             <div class="sectionTitleContainer">
                 <h2 class="sectionTitle">Trabajos para nuestros Clientes</h2>
             </div>
+            <div id="loader"></div>
             <div id="gallery">
                 <div class="imageContainer">
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="1s"
+                    <img loading="lazy" data-wow-duration="0.8s" data-wow-delay="1s"
                         src="../assets//quehacemos/quehacemos_1.jpeg" alt="Maxikiosco Hoy se bebe">
                 </div>
                 <div class="imageContainer">
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="1s"
+                    <img loading="lazy" data-wow-duration="0.8s" data-wow-delay="1s"
                         src="../assets//quehacemos/quehacemos_2.jpeg" alt="frente de Avenida Hogar">
                 </div>
                 <div class="imageContainer">
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="1s"
+                    <img loading="lazy" data-wow-duration="0.8s" data-wow-delay="1s"
                         src="../assets//quehacemos/quehacemos_3.jpeg" alt="frente de Altaviacion">
                 </div>
                 <div class="imageContainer">
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="1s"
+                    <img loading="lazy" data-wow-duration="0.8s" data-wow-delay="1s"
                         src="../assets//quehacemos/quehacemos_4.jpeg" alt="Logo de 75 años en una pared de un local">
                 </div>
                 <div class="imageContainer">
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="1s"
+                    <img loading="lazy" data-wow-duration="0.8s" data-wow-delay="1s"
                         src="../assets//quehacemos/quehacemos_5.jpeg" alt="cartel del jardín botánico de Córdoba">
                 </div>
                 <div class="imageContainer">
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="1s"
+                    <img loading="lazy" data-wow-duration="0.8s" data-wow-delay="1s"
                         src="../assets//quehacemos/quehacemos_6.jpeg" alt="frente de Avenida Hogar">
                 </div>
                 <div class="imageContainer">
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="1s"
+                    <img loading="lazy" data-wow-duration="0.8s" data-wow-delay="1s"
                         src="../assets//quehacemos/quehacemos_7.jpeg" alt="cartel promocional de tarjeta Naranja">
                 </div>
                 <div class="imageContainer">
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="1s"
-                        src="../assets//quehacemos/quehacemos_8.jpeg" alt="cartel promocional de Laporta por sus 75 años">
+                    <img loading="lazy" data-wow-duration="0.8s" data-wow-delay="1s"
+                        src="../assets//quehacemos/quehacemos_8.jpeg"
+                        alt="cartel promocional de Laporta por sus 75 años">
                 </div>
                 <div class="imageContainer">
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="1s"
-                        src="../assets//quehacemos/quehacemos_9.jpeg" alt="frente de la Universidad Católica de Córdoba">
+                    <img loading="lazy" data-wow-duration="0.8s" data-wow-delay="1s"
+                        src="../assets//quehacemos/quehacemos_9.jpeg"
+                        alt="frente de la Universidad Católica de Córdoba">
                 </div>
             </div>
             <div id="galleryModal" class="modal">
                 <span class="close" id="closeImgButton">&times;</span>
-                <img id="modalImage" class="modal-content">
                 <button id="prevImgButton">
                     <div class="topPart"></div>
                     <div class="downPart"></div>
@@ -115,7 +116,7 @@
         </section>
     </main>
 
-    <footer id="footer" class="bg-white-red">
+    <footer id="footer" class="bg-blue-red">
         <div class="footerContainer flex justify-sb">
             <div>
                 <h4>Información</h4>
