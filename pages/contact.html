@@ -43,54 +43,197 @@
     </header>
 
     <main class="mainContainer">
-        <h2 class="sectionTitle">Envíanos un mensaje</h2>
-        <div class="contactContainer flex justify-sb gap-20">
-            <form class="form flex flexdirection-c" method="post" action="">
-                <div class="nameFormContainer flex gap-10">
-                    <div class="flex flexdirection-c">
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" id="name">
+        <section class="form-section">
+
+            <h2 class="sectionTitle">Envíanos un mensaje</h2>
+            <div class="contactContainer flex justify-sb gap-20">
+                <form class="form flex flexdirection-c" method="post" action="">
+                    <div class="nameFormContainer flex gap-10">
+                        <div class="flex flexdirection-c">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="flex flexdirection-c">
+                            <label for="lastName">Apellido</label>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
                     </div>
-                    <div class="flex flexdirection-c">
-                        <label for="lastName">Apellido</label>
-                        <input type="text" name="lastName" id="lastName">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input class="formButton" type="submit" value="Enviar" id="sendEmailButton">
+                </form>
+                <div class="contactInformationContainer flex flexdirection-c gap-20">
+                    <h3>Información de contacto</h3>
+                    <div class="contactInformationSeparation"></div>
+                    <div class="flex align-c gap-10">
+                        <img class="tinyLogo" src="../assets/telefono.png" alt="logo de teléfono" srcset="">
+                        <p><a href="tel:+5493547459665">+54 9 3547459665</a></p>
                     </div>
+                    <div class="flex align-c gap-10">
+                        <img class="tinyLogo" src="../assets/correo-electronico.png" alt="logo de correo" srcset="">
+                        <p><a href="mailto:colorcopyag@gmail.com">colorcopyag@gmail.com</a></p>
+                    </div>
+                    <div class="flex align-c gap-10">
+                        <img class="tinyLogo" src="../assets/correo-electronico.png" alt="logo de correo" srcset="">
+                        <p><a href="mailto:contacto@colorcopygroup.com">contacto@colorcopygroup.com</a></p>
+                    </div>
+                    <div class="flex align-c gap-10">
+                        <img class="tinyLogo" src="../assets/ubicacion.png" alt="Logo de ubicacion">
+                        <p><a href="https://www.google.com/maps/place/Dr.+Ra%C3%BAl+Alfons%C3%ADn+151,+Alta+Gracia,+C%C3%B3rdoba/@-31.6566838,-64.4302764,17z/data=!3m1!4b1!4m6!3m5!1s0x942d57358c719319:0xbe6cf79a346953a!8m2!3d-31.6566884!4d-64.4277015!16s%2Fg%2F11rwky_53m?entry=ttu"
+                                target="_blank" rel="noopener noreferrer">Raúl Alfonsín 157, Alta Gracia Córdoba</a></p>
+                    </div>
+                    <iframe class="google-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.1656163245348!2d-64.4277015!3d-31.656688400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d57358c719319%3A0xbe6cf79a346953a!2sDr.%20Ra%C3%BAl%20Alfons%C3%ADn%20151%2C%20Alta%20Gracia%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1709397721651!5m2!1ses-419!2sar"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <label for="email">Correo electrónico</label>
-                <input type="email" name="email" id="email">
-                <label for="message">Mensaje</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <input class="formButton" type="submit" value="Enviar" id="sendEmailButton">
-            </form>
-            <div class="contactInformationContainer flex flexdirection-c gap-20">
-                <h3>Información de contacto</h3>
-                <div class="contactInformationSeparation"></div>
-                <div class="flex align-c gap-10">
-                    <img class="tinyLogo" src="../assets/telefono.png" alt="logo de teléfono" srcset="">
-                    <p><a href="tel:+5493547459665">+54 9 3547459665</a></p>
-                </div>
-                <div class="flex align-c gap-10">
-                    <img class="tinyLogo" src="../assets/correo-electronico.png" alt="logo de correo" srcset="">
-                    <p><a href="mailto:colorcopyag@gmail.com">colorcopyag@gmail.com</a></p>
-                </div>
-                <div class="flex align-c gap-10">
-                    <img class="tinyLogo" src="../assets/correo-electronico.png" alt="logo de correo" srcset="">
-                    <p><a href="mailto:contacto@colorcopygroup.com">contacto@colorcopygroup.com</a></p>
-                </div>
-                <div class="flex align-c gap-10">
-                    <img class="tinyLogo" src="../assets/ubicacion.png" alt="Logo de ubicacion">
-                    <p><a href="https://www.google.com/maps/place/Dr.+Ra%C3%BAl+Alfons%C3%ADn+151,+Alta+Gracia,+C%C3%B3rdoba/@-31.6566838,-64.4302764,17z/data=!3m1!4b1!4m6!3m5!1s0x942d57358c719319:0xbe6cf79a346953a!8m2!3d-31.6566884!4d-64.4277015!16s%2Fg%2F11rwky_53m?entry=ttu"
-                            target="_blank" rel="noopener noreferrer">Raúl Alfonsín 157, Alta Gracia Córdoba</a></p>
-                </div>
-                <iframe class="google-map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.1656163245348!2d-64.4277015!3d-31.656688400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d57358c719319%3A0xbe6cf79a346953a!2sDr.%20Ra%C3%BAl%20Alfons%C3%ADn%20151%2C%20Alta%20Gracia%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1709397721651!5m2!1ses-419!2sar"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </section>
+
+        <div class="changeColorSection">
+            <section class="profileLinkedin-section">
+                <div class="profile-wrapper">
+                    <!-- PROFILE1 -->
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="/assets/employees/Juan_Manuel_Iazzetta.jpg" alt="Profile">
+                        </div>
+                        <ul class="social-icons">
+                            <!-- <li>
+                                <a href="#instagram" title="Instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                </a>
+                            </li> -->
+                            <!-- <li>
+                                <a href="#twitter" title="Twitter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-twitter">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 
+                                                10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5
+                                                4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li> -->
+                            <!-- <li>
+                                <a href="#threads" title="Threads">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M19 7.5c-1.333 -3 -3.667 -4.5 -7 -4.5c-5 0 -8 2.5 -8 9s3.5 9 8 9s7 -3 7
+                                                -5s-1 -5 -7 -5c-2.5 0 -3 1.25 -3 2.5c0 1.5 1 2.5 2.5 2.5c2.5 0 3.5 -1.5 
+                                                3.5 -5s-2 -4 -3 -4s-1.833 .333 -2.5 1">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="https://www.linkedin.com/in/iazzettajm/" title="Linkedin" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 
+                                                 2 0 0 1 -2 -2z">
+                                        </path>
+                                        <path d="M8 11l0 5"></path>
+                                        <path d="M8 8l0 .01"></path>
+                                        <path d="M12 16l0 -5"></path>
+                                        <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="profile-name">
+                            <h2>Juan Manuel Iazzetta</h2>
+                            <div class="profile-bio">
+                               Product Manager</em>.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROFILE2 -->
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="/assets/employees/horacio_pc.jpg" alt="Profile">
+                        </div>
+                        <ul class="social-icons">
+                            <!-- <li>
+                                <a href="#instagram" title="Instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                </a>
+                            </li> -->
+                            <!-- <li>
+                                <a href="#twitter" title="Twitter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-twitter">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 
+                                                10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5
+                                                4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li> -->
+                            <!-- <li>
+                                <a href="#threads" title="Threads">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M19 7.5c-1.333 -3 -3.667 -4.5 -7 -4.5c-5 0 -8 2.5 -8 9s3.5 9 8 9s7 -3 7
+                                                -5s-1 -5 -7 -5c-2.5 0 -3 1.25 -3 2.5c0 1.5 1 2.5 2.5 2.5c2.5 0 3.5 -1.5 
+                                                3.5 -5s-2 -4 -3 -4s-1.833 .333 -2.5 1">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="https://www.linkedin.com/in/horacio-perez-contreras-546aa6303/" title="Linkedin" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 
+                                                 2 0 0 1 -2 -2z">
+                                        </path>
+                                        <path d="M8 11l0 5"></path>
+                                        <path d="M8 8l0 .01"></path>
+                                        <path d="M12 16l0 -5"></path>
+                                        <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="profile-name">
+                            <h2>Horacio Perez Contreras</h2>
+                            <div class="profile-bio">
+                                Engargado del departamento de finanzas
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+
     </main>
 
-    <footer id="footer" class="bg-white-red">
+    <footer id="footer" class="bg-blue-red">
         <div class="footerContainer flex justify-sb">
             <div>
                 <h4>Información</h4>
