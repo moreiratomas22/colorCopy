@@ -191,6 +191,37 @@ main {
 .synoptic-lvl-1 p,.synoptic-lvl-2 p, .synoptic-title p{
     font-size: 16px;
 }
+.synoptic-item-text p {
+    transition: 0.5s ease-in-out;
+}
+.synoptic-item-2:hover .synoptic-item-text p,
+.synoptic-item-4:hover .synoptic-item-text p,
+.synoptic-item-5:hover .synoptic-item-text p,
+.synoptic-item-6:hover .synoptic-item-text p,
+.synoptic-item-7:hover .synoptic-item-text p,
+.synoptic-item-8:hover .synoptic-item-text p
+{
+    filter: blur(7px);
+    opacity: 0.6;
+}
+
+.synoptic-item-2:hover .synoptic-item-hidden,
+.synoptic-item-4:hover .synoptic-item-hidden,
+.synoptic-item-5:hover .synoptic-item-hidden,
+.synoptic-item-6:hover .synoptic-item-hidden,
+.synoptic-item-7:hover .synoptic-item-hidden,
+.synoptic-item-8:hover .synoptic-item-hidden
+{
+    opacity: 1;
+}
+.synoptic-item-hidden {
+    transform: scale(2);
+    position: absolute;
+    bottom: 15%;
+    z-index: 4;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
 
 @media (width > 1145px) {
     .synoptic-title {
