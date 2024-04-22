@@ -207,6 +207,12 @@ main {
     .synoptic-lvl-2 {
         background-color: var(--color-quaternary);
         z-index: 1;
+        height: 6.5rem;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     
     .synoptic-lvl-2::before {
@@ -232,6 +238,11 @@ main {
     .synoptic-item-7 {
         top: 55%;
         right: 10%;
+    }
+    .synoptic-item-8 {
+        top: 90%;
+        right: 50%;
+        transform: translateX(50%);
     }
     .synoptic-item-1::before {
         transform: rotateZ(-22deg);
@@ -265,6 +276,10 @@ main {
 
     .synoptic-item-7::before {
         transform: rotateZ(-129deg);
+        width: 27rem;
+    }
+    .synoptic-item-8::before {
+        transform: rotateZ(-90deg);
         width: 27rem;
     }
 }
@@ -331,6 +346,12 @@ main {
         top: 55%;
         right: 10%;
     }
+
+    .synoptic-item-8 {
+        top: 70%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
     .synoptic-item-1::before {
         transform: rotateZ(-34deg);
         width: 22rem;
@@ -367,6 +388,10 @@ main {
 
     .synoptic-item-7::before {
         transform: rotateZ(243deg);
+        width: 22rem;
+    }
+    .synoptic-item-8::before {
+        transform: rotateZ(0);
         width: 22rem;
     }
 }
@@ -414,6 +439,11 @@ main {
         top: 55%;
         right: 5%;
     }
+    .synoptic-item-7 {
+        top: 70%;
+        right: 50%;
+        transform: translate(-50%);
+    }
 
     .synoptic-item-1::before {
         transform: rotateZ(-40deg);
@@ -451,6 +481,11 @@ main {
 
     .synoptic-item-7::before {
         transform: rotateZ(240deg);
+        width: 22rem;
+    }
+
+    .synoptic-item-8::before {
+        transform: rotateZ(0);
         width: 22rem;
     }
 }
@@ -498,6 +533,12 @@ main {
         top: 50%;
         right: 5%;
     }
+    
+    .synoptic-item-8 {
+        top: 70%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
 
     .synoptic-item-1::before {
         transform: rotateZ(-40deg);
@@ -535,6 +576,11 @@ main {
 
     .synoptic-item-7::before {
         transform: rotateZ(248deg);
+        width: 22rem;
+    }
+
+    .synoptic-item-8::before {
+        transform: rotateZ(0);
         width: 22rem;
     }
 }
@@ -621,6 +667,11 @@ main {
         transform: rotateZ(257deg);
         width: 22rem;
     }
+
+    .synoptic-item-8::before {
+        transform: rotateZ(0);
+        width: 22rem;
+    }
 }
 
 @media (width < 577px) {
@@ -660,7 +711,8 @@ main {
     .synoptic-item-4::after,
     .synoptic-item-5::after,
     .synoptic-item-6::after,
-    .synoptic-item-7::after {
+    .synoptic-item-7::after,
+    .synoptic-item-8::after {
         content: "";
         background-color: var(--color-primary);
         position: absolute;
