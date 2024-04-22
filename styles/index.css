@@ -536,8 +536,7 @@ a {
     transition: 0.2s ease-in-out;
 }
 
-.footerContainer div h4,
-p {
+.footerContainer div h4{
     margin-bottom: 10px;
 }
 

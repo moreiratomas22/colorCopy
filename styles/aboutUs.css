@@ -132,7 +132,7 @@ main {
     border-radius: 40px;
     padding: 10px 20px;
     position: absolute;
-    width: 13.75rem;
+    width: 220px;
     z-index: 2;
 }
 
@@ -150,24 +150,77 @@ main {
     background-color: var(--color-quinary);
     transform: translateX(-50%);
     z-index: 4;
-}
-
-.synoptic-lvl-1 {
-    background-color: var(--color-tertiary);
-    z-index: 3;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
 .synoptic-lvl-1::before {
     height: 2px;
 }
 
+.synoptic-lvl-2::before {
+    height: 1px;
+}
+
+.synoptic-lvl-1 {
+    background-color: var(--color-tertiary);
+    z-index: 3;
+    height: 104px;
+    padding: 8px 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
 .synoptic-lvl-2 {
     background-color: var(--color-quaternary);
     z-index: 1;
+    height: 112px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.synoptic-lvl-1 h3, .synoptic-lvl-2 h3, .synoptic-title h2 {
+    font-size: 22px;
+}
+.synoptic-lvl-1 p,.synoptic-lvl-2 p, .synoptic-title p{
+    font-size: 16px;
+}
+.synoptic-item-text p {
+    transition: 0.5s ease-in-out;
+}
+.synoptic-item-2:hover .synoptic-item-text p,
+.synoptic-item-4:hover .synoptic-item-text p,
+.synoptic-item-5:hover .synoptic-item-text p,
+.synoptic-item-6:hover .synoptic-item-text p,
+.synoptic-item-7:hover .synoptic-item-text p,
+.synoptic-item-8:hover .synoptic-item-text p
+{
+    filter: blur(7px);
+    opacity: 0.6;
 }
 
-.synoptic-lvl-2::before {
-    height: 1px;
+.synoptic-item-2:hover .synoptic-item-hidden,
+.synoptic-item-4:hover .synoptic-item-hidden,
+.synoptic-item-5:hover .synoptic-item-hidden,
+.synoptic-item-6:hover .synoptic-item-hidden,
+.synoptic-item-7:hover .synoptic-item-hidden,
+.synoptic-item-8:hover .synoptic-item-hidden
+{
+    opacity: 1;
+}
+.synoptic-item-hidden {
+    transform: scale(2);
+    position: absolute;
+    bottom: 15%;
+    z-index: 4;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 
 @media (width > 1145px) {
@@ -177,11 +230,6 @@ main {
         left: 50%;
         transform: translateX(-50%);
         z-index: 4;
-    }
-    
-    .synoptic-lvl-1 {
-        background-color: var(--color-tertiary);
-        z-index: 3;
     }
     
     .synoptic-lvl-1::before {
@@ -202,17 +250,6 @@ main {
     .synoptic-item-3 {
         top: 30%;
         right: 0;
-    }
-    
-    .synoptic-lvl-2 {
-        background-color: var(--color-quaternary);
-        z-index: 1;
-        height: 6.5rem;
-        padding: 0.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
     
     .synoptic-lvl-2::before {
@@ -246,41 +283,41 @@ main {
     }
     .synoptic-item-1::before {
         transform: rotateZ(-22deg);
-        width: 23.75rem;
+        width: 380px;
     }
 
     .synoptic-item-2::before {
         transform: rotateZ(-90deg);
-        width: 11.5rem;
+        width: 188px;
     }
 
     .synoptic-item-3::before {
         transform: rotateZ(202deg);
-        width: 23.75rem;
+        width: 380px;
     }
 
     .synoptic-item-4::before {
         transform: rotateZ(-50deg);
-        width: 27rem;
+        width: 432px;
     }
 
     .synoptic-item-5::before {
         transform: rotateZ(-69deg);
-        width: 30rem;
+        width: 480px;
     }
 
     .synoptic-item-6::before {
         transform: rotateZ(-111deg);
-        width: 30rem;
+        width: 480px;
     }
 
     .synoptic-item-7::before {
         transform: rotateZ(-129deg);
-        width: 27rem;
+        width: 432px;
     }
     .synoptic-item-8::before {
         transform: rotateZ(-90deg);
-        width: 27rem;
+        width: 432px;
     }
 }
 
@@ -348,23 +385,23 @@ main {
     }
 
     .synoptic-item-8 {
-        top: 70%;
+        top: 90%;
         right: 50%;
-        transform: translateX(-50%);
+        transform: translateX(50%);
     }
     .synoptic-item-1::before {
         transform: rotateZ(-34deg);
-        width: 22rem;
+        width: 352px;
     }
 
     .synoptic-item-2::before {
         transform: rotateZ(-90deg);
-        width: 11.5rem;
+        width: 184px;
     }
 
     .synoptic-item-3::before {
         transform: rotateZ(214deg);
-        width: 22rem;
+        width: 352px;
     }
 
     .synoptic-item-4 {
@@ -373,26 +410,26 @@ main {
 
     .synoptic-item-4::before {
         transform: rotateZ(-59deg);
-        width: 22rem;
+        width: 352px;
     }
 
     .synoptic-item-5::before {
         transform: rotateZ(-76deg);
-        width: 30rem;
+        width: 480px;
     }
 
     .synoptic-item-6::before {
         transform: rotateZ(-104deg);
-        width: 30rem;
+        width: 480px;
     }
 
     .synoptic-item-7::before {
         transform: rotateZ(243deg);
-        width: 22rem;
+        width: 352px;
     }
     .synoptic-item-8::before {
-        transform: rotateZ(0);
-        width: 22rem;
+        transform: rotateZ(-90deg);
+        width: 352px;
     }
 }
 
@@ -439,25 +476,25 @@ main {
         top: 55%;
         right: 5%;
     }
-    .synoptic-item-7 {
-        top: 70%;
+    .synoptic-item-8 {
+        top: 90%;
         right: 50%;
-        transform: translate(-50%);
+        transform: translate(50%);
     }
 
     .synoptic-item-1::before {
         transform: rotateZ(-40deg);
-        width: 18rem;
+        width: 288px;
     }
 
     .synoptic-item-2::before {
         transform: rotateZ(-90deg);
-        width: 11.5rem;
+        width: 184px;
     }
 
     .synoptic-item-3::before {
         transform: rotateZ(220deg);
-        width: 18rem;
+        width: 288px;
     }
 
     .synoptic-item-4 {
@@ -466,27 +503,27 @@ main {
 
     .synoptic-item-4::before {
         transform: rotateZ(-60deg);
-        width: 22rem;
+        width: 352px;
     }
 
     .synoptic-item-5::before {
         transform: rotateZ(286deg);
-        width: 28rem;
+        width: 448px;
     }
 
     .synoptic-item-6::before {
         transform: rotateZ(254deg);
-        width: 28rem;
+        width: 448px;
     }
 
     .synoptic-item-7::before {
         transform: rotateZ(240deg);
-        width: 22rem;
+        width: 352px;
     }
 
     .synoptic-item-8::before {
-        transform: rotateZ(0);
-        width: 22rem;
+        transform: rotateZ(-90deg);
+        width: 352px;
     }
 }
 
@@ -499,23 +536,23 @@ main {
         z-index: 4;
     }
     .synoptic-item-1 {
-        top: 22%;
+        top: 21%;
         left: 0;
     }
 
     .synoptic-item-2 {
-        top: 35%;
+        top: 36%;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .synoptic-item-3 {
-        top: 22%;
+        top: 21%;
         right: 0;
     }
 
     .synoptic-item-4 {
-        top: 50%;
+        top: 52%;
         left: 5%;
     }
 
@@ -530,29 +567,29 @@ main {
     }
 
     .synoptic-item-7 {
-        top: 50%;
+        top: 52%;
         right: 5%;
     }
     
     .synoptic-item-8 {
-        top: 70%;
+        top: 88%;
         right: 50%;
-        transform: translateX(-50%);
+        transform: translateX(50%);
     }
 
     .synoptic-item-1::before {
         transform: rotateZ(-40deg);
-        width: 14rem;
+        width: 224px;
     }
 
     .synoptic-item-2::before {
         transform: rotateZ(-90deg);
-        width: 8rem;
+        width: 224px;
     }
 
     .synoptic-item-3::before {
         transform: rotateZ(220deg);
-        width: 14rem;
+        width: 224px;
     }
 
     .synoptic-item-4 {
@@ -561,27 +598,27 @@ main {
 
     .synoptic-item-4::before {
         transform: rotateZ(-68deg);
-        width: 22rem;
+        width: 352px;
     }
 
     .synoptic-item-5::before {
         transform: rotateZ(287deg);
-        width: 28rem;
+        width: 448px;
     }
 
     .synoptic-item-6::before {
         transform: rotateZ(253deg);
-        width: 28rem;
+        width: 448px;
     }
 
     .synoptic-item-7::before {
         transform: rotateZ(248deg);
-        width: 22rem;
+        width: 352px;
     }
 
     .synoptic-item-8::before {
-        transform: rotateZ(0);
-        width: 22rem;
+        transform: rotateZ(-90deg);
+        width: 352px;
     }
 }
 
@@ -628,20 +665,25 @@ main {
         top: 53%;
         right: 0;
     }
+    .synoptic-item-8 {
+        top: 87%;
+        right: 50%;
+        transform: translateX(50%);
+    }
 
     .synoptic-item-1::before {
         transform: rotateZ(-64deg);
-        width: 8rem;
+        width: 128px;
     }
 
     .synoptic-item-2::before {
         transform: rotateZ(-90deg);
-        width: 10rem;
+        width: 160px;
     }
 
     .synoptic-item-3::before {
         transform: rotateZ(244deg);
-        width: 8rem;
+        width: 128px;
     }
 
     .synoptic-item-4 {
@@ -650,27 +692,27 @@ main {
 
     .synoptic-item-4::before {
         transform: rotateZ(-77deg);
-        width: 22rem;
+        width: 352px;
     }
 
     .synoptic-item-5::before {
         transform: rotateZ(286deg);
-        width: 28rem;
+        width: 448px;
     }
 
     .synoptic-item-6::before {
         transform: rotateZ(254deg);
-        width: 28rem;
+        width: 448px;
     }
 
     .synoptic-item-7::before {
         transform: rotateZ(257deg);
-        width: 22rem;
+        width: 352px;
     }
 
     .synoptic-item-8::before {
-        transform: rotateZ(0);
-        width: 22rem;
+        transform: rotateZ(-90deg);
+        width: 352px;
     }
 }
 
@@ -700,7 +742,7 @@ main {
         content: "";
         background-color: var(--color-primary);
         width: 3px;
-        height:  61.25rem;
+        height:  1190px;
         left: 4%;
         top: 93%;
     }
@@ -717,9 +759,16 @@ main {
         background-color: var(--color-primary);
         position: absolute;
         height: 2px;
-        width: calc(90vw - 17rem );
+        width: calc(90vw - 280px );
         left: 0;
         transform: translateX(-100%);
         top: 50%;
+    }
+    .synoptic-item-4::after,
+    .synoptic-item-5::after,
+    .synoptic-item-6::after,
+    .synoptic-item-7::after,
+    .synoptic-item-8::after {
+        width: calc(90vw - 247px );
     }
 }
